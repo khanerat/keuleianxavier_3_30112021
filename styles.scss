@@ -1,0 +1,41 @@
+@import url('styles.css');
+    $primaire:#9356DC;
+    $secondaire:#FF79DA;
+    $tertiaire:#99E2D0;
+    $mint:#15DEA5;
+    $navy:#022F40;
+    $blanc:#ffff;
+    $black:#000000;
+    $whiteSmoke:#F6F6F6;
+    $grey:#F2F2F2;
+
+
+  header{
+    @include header;
+  }
+
+.footer{
+  @include conteneurFooter;
+}
+
+   
+    @keyframes chargement-bar{
+      0%{
+          transform:scaleX(0);
+          opacity:.1;
+      }
+      15%{
+          transform:scaleX(0.18);
+      }
+      25%{
+          transform:scaleX(0.5);
+          animation-timing-function:cubic-bezier(0.9, 0, 0.1,1);
+      }
+      45%{
+          transform:scaleX(0.81);
+          animation-timing-function:cubic-bezier(0.25, 0.25, 1);
+      }
+      100%{
+          transform:scaleX(1);
+      }
+   }

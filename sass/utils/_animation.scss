@@ -1,0 +1,66 @@
+
+
+/**annimation**/
+ .delay-seconds{
+    animation-delay:1s;
+ }
+ .delay-seconds{
+    animation-delay:1000ms;
+ }
+
+
+ .chargemnt{
+    animation: chargement-bar 1000ms 150ms;
+
+ }
+
+ @keyframes chargement-bar{
+    0%{
+        transform:scaleX(0);
+        opacity:.1;
+    }
+    15%{
+        transform:scaleX(0.18);
+    }
+    25%{
+        transform:scaleX(0.5);
+        animation-timing-function:cubic-bezier(0.9, 0, 0.1,1);
+    }
+    45%{
+        transform:scaleX(0.81);
+        animation-timing-function:cubic-bezier(0.25, 0.25, 1);
+    }
+    100%{
+        transform:scaleX(1);
+    }
+ }
+ $charg-bar-dur:1000ms;
+ $charg-bar-delay:150ms;
+ $coffee-delay: $charg-bar-dur + $charg-bar-delay * 2;
+
+ .load-container{
+    margin:300px auto;
+    display:flex;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column-reverse;
+
+    .chargement{
+        width:50vw;
+        height:2vw;
+        border:2px solid #022F40;
+        padding:0.25rem;
+        margin-bottom:30px;
+        &__bar{
+            height:100%;
+            background: #15DEA5;
+            height:100%;
+            transform-origin:left;
+            transform:scaleX(0.5);
+            animation: chargement-bar $charg-bar-dur $charg-bar-delay both;
+            
+        }
+    }
+ }
+ 

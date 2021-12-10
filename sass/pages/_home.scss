@@ -1,0 +1,284 @@
+@mixin bodyH{
+    .logo,
+ h1,
+  h2,
+   h3{
+    font-family: 'shrikhand',sans-serif;
+    src:url("shrikhand/Shrikhand-regular.ttf");
+ }
+
+ body,
+ footer h3{
+    font-family: 'roboto',sans-serif;
+    src:url("roboto/Roboto-regular.ttf");
+    
+ }
+
+ body a{
+    text-decoration: none;
+ }
+ main{
+    
+    display:block;
+    margin:0 auto;
+
+ }
+
+ section{
+    display:block;
+  }
+}
+
+/**presentation**/
+
+p{
+    display:block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+#presentation{
+    
+    text-align:center;   
+    background-color:#f2f2f2;
+    padding:30px;
+}
+
+
+.pTexte1{
+    
+    display:block;
+    text-align: center;
+    font-size:1.5rem;
+    font-weight:bold;
+    margin:0;
+   
+}
+.pTexte2{
+    font-weight:300;
+    margin:1.5rem 0;
+    font-size:x-large;
+    margin-bottom:40px;
+     
+}
+@mixin button{
+ 
+    justify-content:center;
+    border:0px solid black;
+    border-radius:2rem 2rem 2rem 2rem;
+    background:linear-gradient($primaire,$secondaire);
+    box-shadow:0 0 10px rgb(139, 136, 136);
+    cursor: pointer; 
+    font-size: large;
+    color:white;
+    padding:15px;
+  
+}
+
+/**fonction-restaurants**/
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    position:relative;
+}
+
+/**fonction**/
+
+
+.fonction{
+    
+    padding:2rem 1rem;   
+     
+
+}
+.fonctionTitle{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+#bouton2{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+#bouton2:hover{
+    color:#FF79DA;
+}
+.logoF{
+    padding: 1.5rem;
+    margin: 1rem 0 1rem 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    border-radius: 1.25rem;
+    background-color: #F6F6F6;
+    position: relative;
+}
+.font{
+    margin-right: 1rem;
+    color: #7e7e7e;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+
+
+ .click-me{
+     text-decoration: none;
+ }
+.filtreBouton{
+       width:100%;
+       display: flex;
+       flex-direction:row;
+       justify-content: space-around;
+       position: relative;
+       margin-left: 25px;
+       border:1px solid black;
+       border-radius:1rem 1rem 1rem 1rem;
+       cursor: pointer;
+       
+       
+}
+#number{
+    width: 20px;
+       height: 65px;
+       background-color: black;     
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       position: absolute;
+       top: 2px;
+       
+
+}
+.font{
+    width: 20px;
+       height: 20px;
+       align-items: center;
+       top: 2px;
+            
+}
+
+
+
+/**restaurant**/
+.restaurant{
+    
+ 
+    background-color:#f2f2f2;
+    padding:2rem 1rem;
+    
+    
+}
+.titreRestaurant{
+    
+}
+
+
+
+#cRestaurant{
+
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    
+        
+}
+.conteneur{
+    background-color: #fff;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width:48%;
+}
+
+
+.imageRestaurant{
+    
+    height: 12rem;
+    width: 100%;
+    border: 0 solid transparent;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+    
+}
+
+
+
+
+.badge{
+    background-color: #99E2D0;
+    color:darkgreen;
+    position:absolute;
+    border-radius:0.2rem;
+    padding:1rem;  
+    right:1rem;
+    top:1rem;
+    height:15px;
+    width:20%;
+    text-align: center;
+   
+}
+.containerM{
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+  
+}
+.containerF{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    flex: 1;
+
+}
+
+
+.nomR{
+    margin: 0 0 0.25rem;
+    font-size:16px;
+}
+.plat{
+    margin:0,
+}

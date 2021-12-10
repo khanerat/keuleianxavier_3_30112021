@@ -1,0 +1,47 @@
+@mixin Header{
+    .conteneurHeader{
+        display:flex;
+        flex-wrap: wrap;
+        width:100%;
+        margin-top:60px;
+    }
+    
+    #logoH{
+        width:100%;
+        border-top:rgb(152, 182, 211);
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+     
+    }
+    
+    #logo{
+        width:15%;
+       
+    }
+    
+    .conteneurM{
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color:#E5E5E5;
+      
+    }
+    
+    #map{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        font-size:large;
+        font-weight:bold;
+        
+    }
+    
+    #map2{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top:30px;
+        margin-right: 15px;
+    }
+}

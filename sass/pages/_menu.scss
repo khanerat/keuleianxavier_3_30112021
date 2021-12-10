@@ -1,0 +1,131 @@
+
+@mixin bodyM{
+    .logo,
+ h1,
+  h2,
+   h3{
+   font-family: 'shrikhand';
+   src:url("shrikhand/Shrikhand-regular.ttf");
+ }
+ body{
+   font-family: 'robot';
+   src:url("robot/Roboto-regular.ttf");
+  
+   
+ }
+
+ body a{
+    
+   text-decoration: none;
+ }
+ .conteneur{
+    width:100%;
+    display:flex;
+ }
+
+}
+/**block**/
+
+#block{
+    padding: 1rem 2rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/**restaurant**/
+
+.titreP{
+    font-family: "Shrikhand,cursive";
+
+}
+@mixin coeurMenu{
+    height: 2rem;
+    width: 2rem;
+    background-color: initial;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    font-size:35px;
+}
+/**menu**/
+
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+
+}
+/**entrées-plats-desserts**/
+
+.sous_menu{
+    width: 30%;
+    overflow: hidden;
+    padding: 0 1rem;
+}
+
+.title{
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+
+}
+@mixin conteneurEPD{
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    margin: 1rem 0;
+    max-width: 80%;
+    
+    border-radius:0.75rem;
+    box-shadow:0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    overflow:hidden;
+    cursor:pointer;
+    animation: itemAppear .6s;
+    animation-timing-function:cubic-bezier(.03,.80,.83,.67);
+    animation-fill-mode:forwards;
+    transform:scale(0);
+}
+.menuT{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+.description{
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+.prix{
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: 0.5rem;
+
+}
+
+ @mixin button{
+ 
+    justify-content:center;
+    border:0px solid black;
+    border-radius:2rem 2rem 2rem 2rem;
+    background:linear-gradient($primaire,$secondaire);
+    box-shadow:0 0 10px rgb(139, 136, 136);
+    cursor: pointer; 
+    font-size: large;
+    color:white;
+    padding:15px;
+  
+}
