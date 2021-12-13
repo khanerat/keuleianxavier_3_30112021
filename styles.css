@@ -579,5 +579,31 @@ li {
 }
 
 /**home-menu**/
+.logo,
+h1,
+h2,
+h3 {
+  font-family: "shrikhand", sans-serif;
+  src: url("shrikhand/Shrikhand-regular.ttf");
+}
+
+body,
+footer h3 {
+  font-family: "roboto", sans-serif;
+  src: url("roboto/Roboto-regular.ttf");
+}
+
+body a {
+  text-decoration: none;
+}
+
+main {
+  display: block;
+  margin: 0 auto;
+}
+
+section {
+  display: block;
+}
 
 /*# sourceMappingURL=styles.css.map */
