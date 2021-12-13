@@ -119,98 +119,13 @@
     font-size: large;
     color:white;
     padding:15px;
-
-      &:hover{
-          background-color:$tertiaire;
-
-      }
+ 
   
 }
 
-/**home**/
-@mixin bodyH{
-    .logo,
- h1,
-  h2,
-   h3{
-    font-family: 'shrikhand',sans-serif;
-    src:url("shrikhand/Shrikhand-regular.ttf");
- }
 
- body,
- footer h3{
-    font-family: 'roboto',sans-serif;
-    src:url("roboto/Roboto-regular.ttf");
-    
- }
 
- body a{
-    text-decoration: none;
- }
- main{
-    
-    display:block;
-    margin:0 auto;
 
- }
 
- section{
-    display:block;
-  }
-}
 
-/**menu**/
-@mixin bodyM{
-    .logo,
- h1,
-  h2,
-   h3{
-   font-family: 'shrikhand';
-   src:url("shrikhand/Shrikhand-regular.ttf");
- }
- body{
-   font-family: 'robot';
-   src:url("robot/Roboto-regular.ttf");
-  
-   
- }
 
- body a{
-    
-   text-decoration: none;
- }
- .conteneur{
-    width:100%;
-    display:flex;
- }
-
-}
-@mixin conteneurEPD{
-    background-color: #fff;
-    padding: 1rem;
-    display: flex;
-    margin: 1rem 0;
-    max-width: 80%;
-    
-    border-radius:0.75rem;
-    box-shadow:0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-    overflow:hidden;
-    cursor:pointer;
-    animation: itemAppear .6s;
-    animation-timing-function:cubic-bezier(.03,.80,.83,.67);
-    animation-fill-mode:forwards;
-    transform:scale(0);
-}
-@mixin coeurMenu{
-    height: 2rem;
-    width: 2rem;
-    background-color: initial;
-    border: 0 solid transparent;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    position: relative;
-    font-size:35px;
-}

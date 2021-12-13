@@ -4,12 +4,13 @@
  .delay-seconds{
     animation-delay:1s;
  }
+ 
  .delay-seconds{
     animation-delay:1000ms;
  }
 
 
- .chargemnt{
+ .chargement{
     animation: chargement-bar 1000ms 150ms;
 
  }
@@ -34,6 +35,7 @@
         transform:scaleX(1);
     }
  }
+
  $charg-bar-dur:1000ms;
  $charg-bar-delay:150ms;
  $coffee-delay: $charg-bar-dur + $charg-bar-delay * 2;

@@ -1,33 +1,33 @@
-@mixin bodyH{
-    .logo,
- h1,
-  h2,
-   h3{
-    font-family: 'shrikhand',sans-serif;
-    src:url("shrikhand/Shrikhand-regular.ttf");
- }
 
- body,
- footer h3{
-    font-family: 'roboto',sans-serif;
-    src:url("roboto/Roboto-regular.ttf");
-    
- }
+   
 
- body a{
-    text-decoration: none;
- }
- main{
-    
-    display:block;
-    margin:0 auto;
+/**map**/
 
- }
-
- section{
-    display:block;
-  }
+  .conteneurM{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color:#E5E5E5;
+  
 }
+
+#map{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    font-size:large;
+    font-weight:bold;
+    
+}
+
+#map2{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:30px;
+    margin-right: 15px;
+}
+
 
 /**presentation**/
 
@@ -38,6 +38,7 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
 h2{
     display: block;
     font-size: 1.5em;
@@ -66,6 +67,7 @@ h2{
     margin:0;
    
 }
+
 .pTexte2{
     font-weight:300;
     margin:1.5rem 0;
@@ -73,23 +75,28 @@ h2{
     margin-bottom:40px;
      
 }
-@mixin button{
- 
+
+.bouton{
+
     justify-content:center;
     border:0px solid black;
     border-radius:2rem 2rem 2rem 2rem;
-    background:linear-gradient($primaire,$secondaire);
+    background:linear-gradient(#9356DC,#FF79DA);
     box-shadow:0 0 10px rgb(139, 136, 136);
     cursor: pointer; 
     font-size: large;
     color:white;
     padding:15px;
-  
+
+      &:hover{
+          background-color:#99E2D0;
+
+  }
 }
 
 /**fonction-restaurants**/
 
-.container{
+.containerHome{
     max-width:1300px;
     margin:auto;
     position:relative;
@@ -104,6 +111,7 @@ h2{
      
 
 }
+
 .fonctionTitle{
     display: block;
     font-size: 1.5em;
@@ -114,8 +122,6 @@ h2{
     font-weight: bold;
 }
 
-
-
 #bouton2{
     width:100%;
     display:flex;
@@ -125,9 +131,11 @@ h2{
     
     
 }
+
 #bouton2:hover{
     color:#FF79DA;
 }
+
 .logoF{
     padding: 1.5rem;
     margin: 1rem 0 1rem 0.75rem;
@@ -136,6 +144,7 @@ h2{
     background-color: #F6F6F6;
     position: relative;
 }
+
 .font{
     margin-right: 1rem;
     color: #7e7e7e;
@@ -150,6 +159,7 @@ ol {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
+
 li {
     text-align: -webkit-match-parent;
 }
@@ -158,6 +168,7 @@ li {
  .click-me{
      text-decoration: none;
  }
+
 .filtreBouton{
        width:100%;
        display: flex;
@@ -171,6 +182,7 @@ li {
        
        
 }
+
 #number{
     width: 20px;
        height: 65px;
@@ -184,6 +196,7 @@ li {
        
 
 }
+
 .font{
     width: 20px;
        height: 20px;
@@ -193,8 +206,8 @@ li {
 }
 
 
-
 /**restaurant**/
+
 .restaurant{
     
  
@@ -203,31 +216,38 @@ li {
     
     
 }
+
 .titreRestaurant{
     
 }
-
-
 
 #cRestaurant{
 
     display: flex;
     flex-direction:row;
     flex-wrap:wrap;
-    column-gap: 2rem;
+    column-gap: 3rem;
     row-gap: 2rem;
 
     
         
 }
+
 .conteneur{
-    background-color: #fff;
+    background-color: #ffff;
     border-radius: 1rem;
     position: relative;
     text-decoration: none;
     color: inherit;
     display: block;
     width:48%;
+    
+    /*
+     &:active{
+         transform:scaleX(1);
+         animation-name:chargement-bar;
+     }
+     */
 }
 
 
@@ -258,6 +278,7 @@ li {
     text-align: center;
    
 }
+
 .containerM{
     padding: 1rem;
     position: relative;
@@ -266,6 +287,7 @@ li {
 
   
 }
+
 .containerF{
     display:flex;
     flex-direction:row;
@@ -279,6 +301,35 @@ li {
     margin: 0 0 0.25rem;
     font-size:16px;
 }
+
 .plat{
     margin:0,
 }
+
+.coeur{
+  
+    width: 81%;
+    background-color: initial;
+    border: 0 solid transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.interaction1:hover{
+    position:absolute;
+   opacity:0;
+   z-index:2;
+}
+
+.interaction2:hover{
+    position:relative;
+    opacity:1;
+    z-index:1;
+    
+}
+
