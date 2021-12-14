@@ -82,7 +82,7 @@ footer li:hover {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: #E5E5E5;
+  background-color: #F6F6F6;
 }
 
 #map {
@@ -224,26 +224,12 @@ li {
 
 .filtreBouton {
   width: 100%;
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   position: relative;
   margin-left: 25px;
   border: 1px solid black;
   border-radius: 1rem 1rem 1rem 1rem;
   cursor: pointer;
-}
-
-#number {
-  width: 20px;
-  height: 65px;
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 2px;
 }
 
 .font {
@@ -604,6 +590,11 @@ main {
 
 section {
   display: block;
+}
+
+.filtreBouton {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=styles.css.map */

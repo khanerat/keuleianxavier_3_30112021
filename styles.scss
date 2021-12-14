@@ -1,25 +1,21 @@
 @import url('styles.css');
-    $primaire:#9356DC;
-    $secondaire:#FF79DA;
-    $tertiaire:#99E2D0;
-    $mint:#15DEA5;
-    $navy:#022F40;
-    $blanc:#ffff;
-    $black:#000000;
-    $whiteSmoke:#F6F6F6;
-    $grey:#F2F2F2;
+    
 
 
   header{
   @include header;
   }
 
+  @extend %flex-direction;
+  @extend %flex-align-justify;
+
 .footer{
   @include conteneurFooter;
 }
 
    
-    @keyframes chargement-bar{
+
+@keyframes chargement-bar{
       0%{
           transform:scaleX(0);
           opacity:.1;
@@ -41,6 +37,7 @@
    }
 
    
+
 @keyframes itemAppear{
   0%{
       transform:scale(0);
