@@ -38,9 +38,7 @@
     background-color: initial;
     border: 0 solid transparent;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-align-justify;
     cursor: pointer;
     position: relative;
     font-size:35px;
@@ -150,9 +148,7 @@
     background-color: #99e2d0;
     margin: -1rem -5rem -1rem 1rem;
     width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-align-justify;
     transition-duration: .5s;
     
 
@@ -161,9 +157,7 @@
     height: 1.6rem;
     width: 1.6rem;
     background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-align-justify;
     border-radius: 100px;
     transform-origine:right;
     transition-duration: .5s;

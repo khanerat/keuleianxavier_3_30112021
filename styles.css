@@ -246,8 +246,6 @@ li {
 }
 
 #cRestaurant {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   column-gap: 3rem;
   row-gap: 2rem;
@@ -299,8 +297,6 @@ li {
 }
 
 .containerF {
-  display: flex;
-  flex-direction: row;
   width: 100%;
   flex: 1;
 }
@@ -371,9 +367,6 @@ li {
   background-color: initial;
   border: 0 solid transparent;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   position: relative;
   font-size: 35px;
@@ -466,9 +459,6 @@ li {
   background-color: #99e2d0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition-duration: 0.5s;
 }
 
@@ -476,9 +466,6 @@ li {
   height: 1.6rem;
   width: 1.6rem;
   background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 100px;
   transform-origine: right;
   transition-duration: 0.5s;
@@ -592,9 +579,15 @@ section {
   display: block;
 }
 
-.filtreBouton {
+.filtreBouton, #cRestaurant, .containerF {
   display: flex;
   flex-direction: row;
+}
+
+#coeur, .validation, .mouvement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

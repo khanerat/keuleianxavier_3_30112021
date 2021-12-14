@@ -208,8 +208,7 @@ li {
 
 #cRestaurant{
 
-    display: flex;
-    flex-direction:row;
+    @extend %flex-direction;
     flex-wrap:wrap;
     column-gap: 3rem;
     row-gap: 2rem;
@@ -274,8 +273,7 @@ li {
 }
 
 .containerF{
-    display:flex;
-    flex-direction:row;
+   @extend %flex-direction;
     width:100%;
     flex: 1;
 
@@ -297,9 +295,9 @@ li {
     background-color: initial;
     border: 0 solid transparent;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
     cursor: pointer;
     position: relative;
     
