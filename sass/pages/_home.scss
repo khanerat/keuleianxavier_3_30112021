@@ -5,8 +5,7 @@
 
   .conteneurM{
     position: relative;
-    display: flex;
-    align-items: center;
+   @extend %flex-align;
     background-color:#F6F6F6;
   
 }
@@ -266,8 +265,7 @@ li {
 .containerM{
     padding: 1rem;
     position: relative;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
 
   
 }
@@ -295,8 +293,7 @@ li {
     background-color: initial;
     border: 0 solid transparent;
     padding: 0;
-    display:flex;
-    align-items:center;
+    @extend %flex-align;
     justify-content:flex-end;
     cursor: pointer;
     position: relative;

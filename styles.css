@@ -80,8 +80,6 @@ footer li:hover {
 /**map**/
 .conteneurM {
   position: relative;
-  display: flex;
-  align-items: center;
   background-color: #F6F6F6;
 }
 
@@ -292,8 +290,6 @@ li {
 .containerM {
   padding: 1rem;
   position: relative;
-  display: flex;
-  align-items: center;
 }
 
 .containerF {
@@ -315,8 +311,6 @@ li {
   background-color: initial;
   border: 0 solid transparent;
   padding: 0;
-  display: flex;
-  align-items: center;
   justify-content: flex-end;
   cursor: pointer;
   position: relative;
@@ -351,8 +345,6 @@ li {
 /**block**/
 #block {
   padding: 1rem 2rem 0 1rem;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -494,133 +486,26 @@ li {
   background-color: #99E2D0;
 }
 
-/**annimation**/
-/*
- .delay-seconds{
-    animation-delay:1s;
- }
-
- .delay-seconds{
-    animation-delay:1000ms;
- }
-
-
- .chargement{
-    animation: chargement-bar 1000ms 150ms;
-
- }
-
- @keyframes chargement-bar{
-    0%{
-        transform:scaleX(0);
-        opacity:.1;
-    }
-    14%{
-        transform:scaleX(0.18);
-    }
-    26%{
-        transform:scaleX(0.5);
-        animation-timing-function:cubic-bezier(0.9, 0, 0.1,1);
-    }
-    45%{
-        transform:scaleX(0.81);
-        animation-timing-function:cubic-bezier(0.25, 0.25, 1);
-    }
-    100%{
-        transform:scaleX(1);
-    }
- }
-
- $charg-bar-dur:1000ms;
- $charg-bar-delay:150ms;
- $coffee-delay: $charg-bar-dur + $charg-bar-delay * 2;
-
-    .load-container{
-    margin:300px auto;
-    height:100%;
-    @extend %flex-align-justify;
-    flex-direction:column-reverse;
-
-    .textLoad{
-        @extend %flex-align-justify;
-    }
-
-       .chargement{
-
-        width:50vw;
-        height:2vw;
-        border:2px solid #022F40;
-        padding:0.25rem;
-        margin-bottom:30px;
-        &__bar{
-
-            background:linear-gradient(#9356DC,#FF79DA);
-            height:100%;
-            height:100%;
-            transform-origin:left;
-            transform:scaleX(0.5);
-            animation: chargement-bar $charg-bar-dur $charg-bar-delay both;
-
-         }
-
-    }
- }
-
-*/
-.containerL {
-  height: 100%;
-  width: 100%;
-  animation: transition-duration 4s;
-  position: absolute;
-  object-fit: cover;
-}
-
-.acceuil {
-  height: 100%;
-  width: 100%;
-  background: url(loader/pexels-chevanon-photography-302899.jpg);
-  background: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.acceuil h1 {
-  font-size: 120px;
-  margin-bottom: 450px;
-}
-
 /**loader**/
 .loader {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background: #fff;
-  animation: transition-duration 4s;
+  z-index: 10000;
+  object-fit: cover;
+  animation: loader 1s ease-in-out 3s forwards;
 }
 
 .lettre {
+  position: relative;
   color: #99E2D0;
   font-size: 80px;
   letter-spacing: 15px;
   margin-bottom: 150px;
   animation: neon 2s linear infinite;
-  animation-fill-mode: forwards;
 }
 
-@keyframes neon {
-  0% {
-    color: linear-gradient(#9356DC, #FF79DA);
-    text-shadow: 0 0 7px black;
-  }
-  90% {
-    color: #99E2D0;
-    text-shadow: none;
-  }
-  100% {
-    color: linear-gradient(#9356DC, #FF79DA);
-    text-shadow: 0 0 7px black;
-  }
-}
 .lettre:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -661,26 +546,6 @@ li {
   animation-delay: 1s;
 }
 
-@keyframes transition-duration {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotateX(0);
-  }
-}
-@keyframes transition-timing-function {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotate(0);
-  }
-}
 /**home-menu**/
 .logo,
 h1,
@@ -726,10 +591,72 @@ section {
   flex-direction: row;
 }
 
-#coeur, .validation, .mouvement, .acceuil, .loader {
+#coeur, .validation, .mouvement, .loader {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.conteneurM, .containerM, .coeur, #block {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes neon {
+  0% {
+    color: linear-gradient(#9356DC, #FF79DA);
+    text-shadow: 0 0 7px black;
+  }
+  90% {
+    color: #99E2D0;
+    text-shadow: none;
+  }
+  100% {
+    color: linear-gradient(#9356DC, #FF79DA);
+    text-shadow: 0 0 7px black;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*
+@keyframes transition-duration{
+    from{
+        opacity:0;
+        transform:rotateX(0);
+
+    }
+    to{
+        opacity:1;
+        transform:rotateX(-10deg);
+    }
+}
+@keyframes transition-timing-function{
+    from{
+        opacity:0;
+        transform:rotateX(1);
+
+    }
+    to{
+        opacity:1;
+        transform:rotate(-10deg);
+
+    }
+}
+@keyframes translate{
+    from{
+        opactity:0;
+
+    }
+}
+*/
 
 /*# sourceMappingURL=styles.css.map */

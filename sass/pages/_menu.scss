@@ -20,8 +20,7 @@
 
 #block{
     padding: 1rem 2rem 0 1rem;
-    display: flex;
-    align-items: center;
+    @extend %flex-align;
     justify-content: space-between;
 }
 
