@@ -388,7 +388,7 @@ li {
   padding-bottom: 0.5rem;
   font-weight: normal;
 }
-.sous-menu .sous-menu-title .sous-menu-title::after {
+.sous-menu .sous-menu-title::after {
   background-color: #99E2D0;
   bottom: 0;
   height: 4px;
@@ -403,8 +403,8 @@ li {
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  margin: 1.3rem 0;
-  max-width: 100%;
+  margin: 1.3rem 1rem;
+  max-width: 95%;
   border-radius: 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -460,7 +460,7 @@ li {
   transform: rotate(180deg);
   transition-duration: 0.7s;
 }
-.container-menu .container-menu:hover .container-menu_mouvement-icon {
+.container-menu:hover .container-menu_mouvement-icon {
   transform: rotate(0);
 }
 .container-menu .container-menu_icon {
