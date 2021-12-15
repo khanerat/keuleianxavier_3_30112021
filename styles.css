@@ -364,10 +364,6 @@ li {
   font-size: 35px;
 }
 
-#coeur:hover {
-  color: #9356DC;
-}
-
 /**menu**/
 .menu {
   display: flex;
@@ -495,6 +491,7 @@ li {
   z-index: 10000;
   object-fit: cover;
   animation: loader 1s ease-in-out 3s forwards;
+  animation-fill-mode: both;
 }
 
 .lettre {
@@ -544,6 +541,25 @@ li {
 
 .lettre:nth-child(10) {
   animation-delay: 1s;
+}
+
+/**animation-menu**/
+.animation-0,
+.animation-1,
+.animation-2 {
+  transition-timing-function: cubic-bezier(0.1s);
+}
+
+.animation-3,
+.animation-4,
+.animation-5 {
+  transition-timing-function: cubic-bezier(0.3s);
+}
+
+.animation-6,
+.animation-7,
+.animation-8 {
+  transition-timing-function: cubic-bezier(0.6s);
 }
 
 /**home-menu**/
@@ -627,36 +643,5 @@ section {
     opacity: 0;
   }
 }
-/*
-@keyframes transition-duration{
-    from{
-        opacity:0;
-        transform:rotateX(0);
-
-    }
-    to{
-        opacity:1;
-        transform:rotateX(-10deg);
-    }
-}
-@keyframes transition-timing-function{
-    from{
-        opacity:0;
-        transform:rotateX(1);
-
-    }
-    to{
-        opacity:1;
-        transform:rotate(-10deg);
-
-    }
-}
-@keyframes translate{
-    from{
-        opactity:0;
-
-    }
-}
-*/
 
 /*# sourceMappingURL=styles.css.map */

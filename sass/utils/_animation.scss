@@ -9,6 +9,8 @@
     z-index:10000;
     object-fit:cover;
     animation: loader 1s ease-in-out 3s forwards;
+    animation-fill-mode:both;
+    
     
     
 }
@@ -19,7 +21,7 @@
     letter-spacing:15px;
     margin-bottom:150px;
     animation: neon 2s linear infinite;
-   
+    
       
 }
     
@@ -55,4 +57,25 @@
 
 }
 
+/**animation-menu**/
 
+.animation-0,
+.animation-1,
+.animation-2{
+    transition-timing-function: cubic-bezier(0.1s);
+
+}
+
+.animation-3,
+.animation-4,
+.animation-5{
+    transition-timing-function: cubic-bezier(0.3s);
+    
+}
+
+.animation-6,
+.animation-7,
+.animation-8{
+    transition-timing-function: cubic-bezier(0.6s);
+
+}
