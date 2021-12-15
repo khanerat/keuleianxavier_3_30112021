@@ -71,6 +71,7 @@ footer li:hover {
 
 .retour {
   font-size: xx-large;
+  position: absolute;
 }
 
 .retour:hover {
@@ -387,7 +388,7 @@ li {
   padding-bottom: 0.5rem;
   font-weight: normal;
 }
-.sous-menu .sous-menu-title::after {
+.sous-menu .sous-menu-title .sous-menu-title::after {
   background-color: #99E2D0;
   bottom: 0;
   height: 4px;
