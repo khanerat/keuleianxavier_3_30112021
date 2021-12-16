@@ -138,7 +138,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 1.3rem;
+    padding-left: 0;
 
  }
 
@@ -150,8 +150,8 @@
     transition-duration: .5s;
 
  }
-  .container-menu:hover .container-menu_validation{
-      margin-right:-10px;
+  &:hover .container-menu_validation{
+      margin-right:-9px;
   }
   .container-menu_mouvement-icon{
      @extend %flex-align-justify;

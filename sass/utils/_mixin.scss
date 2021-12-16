@@ -119,6 +119,11 @@
     font-size: large;
     color:white;
     padding:15px;
+    
+     &hover{
+         background-color:white;
+         box-shadow:0 0 10 px black;
+     }
  
   
 }
