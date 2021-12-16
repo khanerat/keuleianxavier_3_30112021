@@ -358,13 +358,13 @@ li {
   background-color: #f6f6f6;
   position: relative;
   margin: auto;
+  margin-top: -40px;
 }
 
 /**block**/
 #block {
   padding: 1rem 2rem 0 1rem;
   justify-content: space-between;
-  z-index: 3;
 }
 
 /**restaurant**/
@@ -458,7 +458,7 @@ li {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 0;
+  padding-left: 0.5rem;
 }
 .container-menu .container-menu_validation {
   background-color: #99e2d0;

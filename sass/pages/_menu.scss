@@ -15,6 +15,7 @@
     background-color: #f6f6f6;
     position: relative;
     margin:auto;
+   margin-top:-40px;
 }
 /**block**/
 
@@ -22,7 +23,7 @@
     padding: 1rem 2rem 0 1rem;
     @extend %flex-align;
     justify-content: space-between;
-    z-index:3;
+    
 }
 
 /**restaurant**/
@@ -139,7 +140,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 0;
+    padding-left: 0.5rem;
 
  }
 
@@ -148,7 +149,7 @@
     margin: -1rem -7.5rem -1rem 1rem;
     width: 6.5rem;
     @extend %flex-align-justify;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 
  }
   &:hover .container-menu_validation{
@@ -162,7 +163,7 @@
      background-color:white;
      color:#99E2D0;
      transform:rotate(180deg);
-     transition-duration:.7s;
+     transition-duration:0.7s;
 
     
  }
