@@ -7,13 +7,12 @@
        src:url("shrikhand/Shrikhand-regular.ttf");
        
     }
-   
+     
     body,
     footer h3{
        font-family: 'roboto',sans-serif;
        src:url("roboto/Roboto-regular.ttf");
-        
-
+           
     }
    
     body a{
@@ -30,15 +29,7 @@
     section{
        display:block;
      }
-     .containerE{
-      animation:transition-duration 1s;
-  }
-  .containerP{
-      animation:transition-duration 2s;
-  }
-  .containerD{
-      animetion:transition-duration 4s;
-  }
-  li{
+  
+    li{
      list-style-type:none;
-  }
+    }

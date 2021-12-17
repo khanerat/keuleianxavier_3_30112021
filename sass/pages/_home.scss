@@ -145,8 +145,25 @@ h2{
     
 }
 
-#bouton2:hover{
-    color:#FF79DA;
+.case-1:hover{
+    transform:scale(1.15);
+    background-color:#fff;
+    box-shadow:5px 5px 10px 5px black;
+    cursor:pointer;
+
+}
+.case-2:hover{
+    transform:scale(1.15);
+    background-color:#fff;
+    box-shadow:5px 5px 10px 5px black;
+    cursor:pointer;
+
+}
+.case-3:hover{
+   transform:scale(1.15);
+   background-color:#fff;
+   box-shadow:5px 5px 10px 5px black;
+   cursor:pointer;
 }
 
 .logoF{
