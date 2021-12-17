@@ -545,18 +545,18 @@ li {
   opacity: 0;
   object-fit: cover;
   z-index: 1000;
-  margin-top: 0;
 }
 
 .loader-spin {
-  position: initial;
+  position: absolute;
   border-radius: 50%;
   border-top: 3rem solid #9356DC;
   border-bottom: 3rem solid #99E2D0;
   opacity: 0;
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   animation: spin 3s ease-in-out infinite;
+  margin-top: 20px;
 }
 
 /**animation-menu**/
