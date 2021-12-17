@@ -2,54 +2,41 @@
 
 @keyframes spin {
   0% {
-      opacity:1;
+      opacity:100%;
       transform: rotate(0deg);
+  }
+  50%{
+    opacity:100%;
   }
   100% {
     opacity:0;
        transform: rotate(360deg);
-       visibility:hidden;
+      
   }
 }
 
-/*
-@keyframes neon{
 
-    0%{
-        color:linear-gradient(#9356DC,#FF79DA); 
-        text-shadow: 0 0 7px black;   
-    }
-    90%{
-        color:#99E2D0;
-        text-shadow:none;
-    }
-    100%{
-        color:linear-gradient(#9356DC,#FF79DA);
-        text-shadow: 0 0 7px black;  
-    }
-
-}
 
 @keyframes loader{
     0%{
-        opacity:1;
+        opacity:100%;
     }
     50%{
-        opacity:0.5;
+      opacity:100%;
     }
     100%{
-        opacity:0;
-        visibility: hidden;
-       
+      opacity:0;
+      visibility: hidden;
+
     }
 }
-*/
+
 
 @keyframes itemAppear {
     0% {
       transform: scale(0)
     }
-    
+
     100% {
       transform: scale(1);
     }

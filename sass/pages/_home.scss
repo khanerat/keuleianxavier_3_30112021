@@ -78,9 +78,8 @@ h2{
     display:flex;
     justify-content:center;
 }
-.bouton{
 
-    
+.bouton{
     justify-content:center;
     border:0px solid black;
     border-radius:2rem 2rem 2rem 2rem;
@@ -90,13 +89,14 @@ h2{
     font-size: large;
     color:white;
     padding:15px;
-  
-}
-.bouton:hover{
-    transform:scale(1.15);
-    background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
-    box-shadow:#676767 0px 7px 30px 5px;
-}
+    
+    .bouton:hover{
+        transform:scale(1.15);       
+        background-color:linear-gradient(to left bouton, #FFACE8, #AE80E5);
+        box-shadow:#676767 0px 7px 40px 5px,
+     }
+    }
+
 
 /**fonction-restaurants**/
 
@@ -334,6 +334,11 @@ li {
 
     .coeur:hover{
         font-weight:#99E2D0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
     }
     
 }
