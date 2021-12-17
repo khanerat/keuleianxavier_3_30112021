@@ -2,27 +2,24 @@
 /**loader**/
 
 
-   
-
-.loader{
+.loader-spin{
     
-    
+    @extend %flex-align-justify;
     position:fixed;
-    width:20%;
-    height:auto;
-    border-top:20px solid #9356DC;
-    
-    border-bottom:20px solid #FF79DA;
-    
+    width:17rem;
+    height:17rem;
+    top:0;
+    border-top:3rem solid #9356DC;
+    border-bottom:3rem solid #FF79DA;
     border-radius:50%;
-    margin:auto;
-    top:0; left:0; right:0; bottom:0;
+    z-index:10000;
     -webkit-animation:spin 3s linear forwards;
     -o-animation:spin 3s linear forwards;
-    animation: spin 3s linear forwards;    
-    z-index:10000;
-    object-fit:cover;
-      
+    animation: spin 3s linear forwards;  
+
+    
+   
+    
 }
 
 

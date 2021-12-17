@@ -74,9 +74,13 @@ h2{
     margin-bottom:40px;
      
 }
-
+.clique{
+    display:flex;
+    justify-content:center;
+}
 .bouton{
 
+    
     justify-content:center;
     border:0px solid black;
     border-radius:2rem 2rem 2rem 2rem;
@@ -86,11 +90,12 @@ h2{
     font-size: large;
     color:white;
     padding:15px;
-
-      &:hover{
-          background-color:#99E2D0;
-
-  }
+  
+}
+.bouton:hover{
+    transform:scale(1.15);
+    background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
+    box-shadow:#676767 0px 7px 30px 5px;
 }
 
 /**fonction-restaurants**/
@@ -145,26 +150,30 @@ h2{
     
 }
 
+/**degrader-et-ombre**/
+
 .case-1:hover{
     transform:scale(1.15);
-    background-color:#fff;
-    box-shadow:5px 5px 10px 5px black;
+    background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
+    box-shadow:#676767 0px 7px 30px 5px;
     cursor:pointer;
 
 }
 .case-2:hover{
     transform:scale(1.15);
-    background-color:#fff;
-    box-shadow:5px 5px 10px 5px black;
+    background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
+    box-shadow:#676767 0px 7px 30px 5px;
     cursor:pointer;
 
 }
 .case-3:hover{
    transform:scale(1.15);
-   background-color:#fff;
-   box-shadow:5px 5px 10px 5px black;
+   background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
+   box-shadow:#676767 0px 7px 30px 5px;
    cursor:pointer;
 }
+
+/**logo-phone-liste-magasin**/
 
 .logoF{
     padding: 1.5rem;
@@ -174,7 +183,6 @@ h2{
     background-color: #F6F6F6;
     position: relative;
 }
-
 .font{
     margin-right: 1rem;
     color: #7e7e7e;
@@ -257,12 +265,6 @@ li {
     display: block;
     width:48%;
     
-    /*
-     &:active{
-         transform:scaleX(1);
-         animation-name:chargement-bar;
-     }
-     */
 }
 
 
@@ -329,19 +331,12 @@ li {
     justify-content:flex-end;
     cursor: pointer;
     position: relative;
+
+    .coeur:hover{
+        font-weight:#99E2D0;
+    }
     
 }
 
-.interaction1:hover{
-    position:absolute;
-   opacity:0;
-   z-index:2;
-}
 
-.interaction2:hover{
-    position:relative;
-    opacity:1;
-    z-index:1;
-    
-}
 

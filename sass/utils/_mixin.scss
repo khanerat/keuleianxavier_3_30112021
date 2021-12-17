@@ -120,9 +120,10 @@
     color:white;
     padding:15px;
     
-     &hover{
-         background-color:white;
-         box-shadow:0 0 10 px black;
+    .bouton:hover{
+        transform:scale(1.15);
+        background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
+        box-shadow:#676767 0px 7px 40px 5px,
      }
  
   

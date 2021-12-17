@@ -142,6 +142,11 @@ h2 {
   margin-bottom: 40px;
 }
 
+.clique {
+  display: flex;
+  justify-content: center;
+}
+
 .bouton {
   justify-content: center;
   border: 0px solid black;
@@ -153,8 +158,11 @@ h2 {
   color: white;
   padding: 15px;
 }
+
 .bouton:hover {
-  background-color: #99E2D0;
+  transform: scale(1.15);
+  background: linear-gradient(to left bouton, #FFACE8, #AE80E5);
+  box-shadow: #676767 0px 7px 30px 5px;
 }
 
 /**fonction-restaurants**/
@@ -203,27 +211,29 @@ h2 {
   padding: 0;
 }
 
+/**degrader-et-ombre**/
 .case-1:hover {
   transform: scale(1.15);
-  background-color: #fff;
-  box-shadow: 5px 5px 10px 5px black;
+  background: linear-gradient(to left bouton, #FFACE8, #AE80E5);
+  box-shadow: #676767 0px 7px 30px 5px;
   cursor: pointer;
 }
 
 .case-2:hover {
   transform: scale(1.15);
-  background-color: #fff;
-  box-shadow: 5px 5px 10px 5px black;
+  background: linear-gradient(to left bouton, #FFACE8, #AE80E5);
+  box-shadow: #676767 0px 7px 30px 5px;
   cursor: pointer;
 }
 
 .case-3:hover {
   transform: scale(1.15);
-  background-color: #fff;
-  box-shadow: 5px 5px 10px 5px black;
+  background: linear-gradient(to left bouton, #FFACE8, #AE80E5);
+  box-shadow: #676767 0px 7px 30px 5px;
   cursor: pointer;
 }
 
+/**logo-phone-liste-magasin**/
 .logoF {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
@@ -294,12 +304,6 @@ li {
   color: inherit;
   display: block;
   width: 48%;
-  /*
-   &:active{
-       transform:scaleX(1);
-       animation-name:chargement-bar;
-   }
-   */
 }
 
 .imageRestaurant {
@@ -352,17 +356,8 @@ li {
   cursor: pointer;
   position: relative;
 }
-
-.interaction1:hover {
-  position: absolute;
-  opacity: 0;
-  z-index: 2;
-}
-
-.interaction2:hover {
-  position: relative;
-  opacity: 1;
-  z-index: 1;
+.coeur .coeur:hover {
+  font-weight: #99E2D0;
 }
 
 .image {
@@ -536,27 +531,24 @@ li {
   margin-bottom: 20px;
 }
 .bouton .bouton:hover {
-  background-color: #99E2D0;
+  transform: scale(1.15);
+  background: linear-gradient(to left bouton, #FFACE8, #AE80E5);
+  box-shadow: #676767 0px 7px 40px 5px;
 }
 
 /**loader**/
-.loader {
+.loader-spin {
   position: fixed;
-  width: 20%;
-  height: auto;
-  border-top: 20px solid #9356DC;
-  border-bottom: 20px solid #FF79DA;
-  border-radius: 50%;
-  margin: auto;
+  width: 17rem;
+  height: 17rem;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  border-top: 3rem solid #9356DC;
+  border-bottom: 3rem solid #FF79DA;
+  border-radius: 50%;
+  z-index: 10000;
   -webkit-animation: spin 3s linear forwards;
   -o-animation: spin 3s linear forwards;
   animation: spin 3s linear forwards;
-  z-index: 10000;
-  object-fit: cover;
 }
 
 /**animation-menu**/
@@ -627,7 +619,7 @@ li {
   flex-direction: row;
 }
 
-#coeur, .container-menu .container-menu_validation, .container-menu .container-menu_mouvement-icon {
+#coeur, .container-menu .container-menu_validation, .container-menu .container-menu_mouvement-icon, .loader-spin {
   display: flex;
   align-items: center;
   justify-content: center;

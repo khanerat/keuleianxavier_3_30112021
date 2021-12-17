@@ -214,6 +214,8 @@
     margin-bottom:20px;
 
       .bouton:hover{
-          background-color:#99E2D0;
+          transform:scale(1.15);
+          background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
+          box-shadow:#676767 0px 7px 40px 5px,
  }
 }
