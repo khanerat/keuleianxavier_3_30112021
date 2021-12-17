@@ -120,10 +120,11 @@
     color:white;
     padding:15px;
     
-    .bouton:hover{
-        transform:scale(1.15);      
-        background-color:linear-gradient(to left bouton, #FFACE8, #AE80E5);
-        box-shadow:#676767 0px 7px 40px 5px,
+    &:hover{
+        transform:scale(1.15);   
+        opacity:0.9;   
+        box-shadow:#676767 0px 7px 20px 5px;
+        cursor:pointer;
      }
  
   

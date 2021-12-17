@@ -34,35 +34,32 @@
 }
 
 #coeur{
-    height: 2rem;
-    width: 2rem;
+    display:flex;
+    height: 47px;
+    width: 2.5rem;
     background-color: initial;
     border: 0 solid transparent;
     padding: 0;
-    @extend %flex-align-justify;
     cursor: pointer;
     position: relative;
     font-size:35px;
-    overflow:hidden;
-    z-index:0;
+    opacity:0;
+    
 
     
 
-    .coeur:hover{
-        font-weight:#99E2D0;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        z-index:-1;
+    &:hover{
+        
+            display:flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right:0;
+            bottom:0;
+            opacity:-1;  
+            background-color:linear-gradient(#9356DC,#FF79DA);
         
     }
-
-}
-
-
-.far fa-heart{
 
 }
 
@@ -120,7 +117,7 @@
     box-shadow:0.25rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
     overflow:hidden;
     cursor:pointer;
-    animation: itemAppear .6s;
+    animation: itemAppear 0.6s;
     animation-timing-function:ease-in-out;
     animation-fill-mode:both;
     transform:scale(1);
@@ -207,9 +204,10 @@
     padding:15px;
     margin-bottom:20px;
 
-      .bouton:hover{
-          transform:scale(1.15);         
-          background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
-          box-shadow:#676767 0px 7px 40px 5px,
+      &:hover{
+          transform:scale(1.15);   
+          opacity:0.9;     
+          box-shadow:#676767 0px 7px 20px 5px;
+          cursor:pointer;
  }
 }

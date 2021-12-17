@@ -15,21 +15,25 @@
            
     }
    
-    body a{
+    body a ul li{
        text-decoration: none;
+       
     }
     
     main{
        
        display:block;
        margin:0 auto;
-   
+       
+       
     }
    
     section{
        display:block;
+       text-decoration:none;
      }
   
     li{
      list-style-type:none;
+     text-decoration:none;
     }
