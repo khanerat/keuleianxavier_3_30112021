@@ -33,7 +33,7 @@
 
 }
 
-#coeur{
+.coeur{
     display:flex;
     height: 47px;
     width: 2.5rem;
@@ -56,8 +56,8 @@
             left: 0;
             right:0;
             bottom:0;
-            opacity:-1;  
-            background-color:linear-gradient(#9356DC,#FF79DA);
+            opacity:1;  
+            background-color:#9356DC;
         
     }
 
@@ -82,13 +82,13 @@
     flex-direction:column;
     width: 100%;
     overflow: hidden;
-    padding: 1 1rem;
+    padding:1rem;
 
 
     .sous-menu-title{
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     font-weight: normal;
     
     &::after{

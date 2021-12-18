@@ -155,21 +155,18 @@ h2{
 
 .case-1:hover{
     transform:scale(1.15);
-    background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
     box-shadow:#676767 0px 7px 20px 5px;
     cursor:pointer;
 
 }
 .case-2:hover{
     transform:scale(1.15);
-    background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
     box-shadow:#676767 0px 7px 20px 5px;
     cursor:pointer;
 
 }
 .case-3:hover{
    transform:scale(1.15);
-   background:linear-gradient(to left bouton, #FFACE8, #AE80E5);
    box-shadow:#676767 0px 7px 20px 5px;
    cursor:pointer;
 }
@@ -200,7 +197,7 @@ ol {
 }
 
 li {
-    text-align: -webkit-match-parent;
+    
     text-decoration: none;
 }
 
@@ -334,7 +331,7 @@ li {
     position: relative;
 
     .coeur:hover{
-        font-weight:#99E2D0;
+        
         position: absolute;
         top: 0;
         left: 0;
