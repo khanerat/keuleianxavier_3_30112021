@@ -113,7 +113,8 @@ h2{
 .fonction{
     
     padding:2rem 1rem;   
-     
+    
+    
 
 }
 
@@ -125,6 +126,8 @@ h2{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+
+
 }
 .number{
     position:absolute;
@@ -147,7 +150,11 @@ h2{
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    
+
+    @media screen and(max-width:768px){
+        flex-direction:column;
+
+    }
     
 }
 
@@ -199,6 +206,12 @@ ol {
 li {
     
     text-decoration: none;
+    @media screen and (min-width:768px) and (max-width:1024px){
+        font-size:small;
+    }
+    @media screen and (max-width:768px){
+        font-size:small;
+    }
 }
 
 
@@ -247,10 +260,10 @@ li {
 
     @extend %flex-direction;
     flex-wrap:wrap;
-    column-gap: 3rem;
+    column-gap: 1rem;
     row-gap: 2rem;
 
-    
+  
         
 }
 
@@ -262,7 +275,9 @@ li {
     color: inherit;
     display: block;
     width:48%;
-    
+    @media screen and (max-width:768px){
+        width:100%;
+    }
 }
 
 
@@ -336,16 +351,20 @@ li {
             font-size:25px;
       }
       .coeur-icon-full{
-        filter:invert(#9356DC);
+        
           position:absolute;
           right:0;
           bottom:10px;
           opacity:0;
           font-size:25px;
-          background:linear-gradient(to bottom, #9356DC 100%);
+          background-size:100%;
+          -webkit-background-clip:text;
+          -webkit-text-fill-color:transparent;
+          background-image:linear-gradient(to bottom, #FF79DA, #9356DC);
           transition:0.3s ease;
           &:hover{
               opacity:1;
+              
           }     
         
        }

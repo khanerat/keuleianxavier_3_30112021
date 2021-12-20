@@ -20,13 +20,12 @@ footer{
 
 .logoFooter{
     filter:invert(100%);
-    width:15%;
-    flex-direction:column;
-    display:flex;
-    align-items:center;
+   
     
 }
-
+.blockFooter{
+    display:contents;
+}
 footer p {
     padding-bottom: 20px;
     font-size: 15px;
