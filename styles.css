@@ -393,11 +393,10 @@ li {
   padding: 0;
   cursor: pointer;
   position: relative;
-  font-size: 35px;
-  opacity: 0;
+  font-size: 25px;
+  opacity: 1;
 }
 .coeur:hover {
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -491,7 +490,8 @@ li {
   transition-duration: 0.5s;
 }
 .container-menu:hover .container-menu_validation {
-  margin-right: -9px;
+  margin-right: -17px;
+  border-radius: 0 0.75rem 0.75rem 0;
 }
 .container-menu .container-menu_mouvement-icon {
   width: 1.6rem;
@@ -543,11 +543,13 @@ li {
 
 .loader-spin {
   position: absolute;
-  border-radius: 50%;
+  border-radius: 20%;
   border-top: 3rem solid #9356DC;
   border-bottom: 3rem solid #99E2D0;
+  border-left: 3rem solid #FF79DA;
+  border-right: 3rem solid #F6F6F6;
   opacity: 0;
-  width: 40%;
+  width: 30%;
   height: 40%;
   animation: spin 3s ease-in-out infinite;
   margin-top: 20px;
@@ -555,22 +557,40 @@ li {
 }
 
 /**animation-menu**/
-.delay-1,
-.delay-2,
-.delay-3 {
+.delay-1 {
   animation-delay: 1s;
 }
 
-.delay-4,
-.delay-5,
-.delay-6 {
-  animation-delay: 2s;
+.delay-2 {
+  animation-delay: 1.2s;
 }
 
-.delay-7,
-.delay-8,
+.delay-3 {
+  animation-delay: 1.5s;
+}
+
+.delay-4 {
+  animation-delay: 1.7s;
+}
+
+.delay-5 {
+  animation-delay: 1.9s;
+}
+
+.delay-6 {
+  animation-delay: 2.1s;
+}
+
+.delay-7 {
+  animation-delay: 2.3s;
+}
+
+.delay-8 {
+  animation-delay: 2.5s;
+}
+
 .delay-9 {
-  animation-delay: 3s;
+  animation-delay: 2.7s;
 }
 
 .menu-1 {

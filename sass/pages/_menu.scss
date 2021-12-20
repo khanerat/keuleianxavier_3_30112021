@@ -42,15 +42,15 @@
     padding: 0;
     cursor: pointer;
     position: relative;
-    font-size:35px;
-    opacity:0;
+    font-size:25px;
+    opacity:1;
     
 
     
 
     &:hover{
         
-            display:flex;
+            
             position: absolute;
             top: 0;
             left: 0;
@@ -165,7 +165,8 @@
 
  }
   &:hover .container-menu_validation{
-      margin-right:-9px;
+      margin-right:-17px;
+      border-radius:0 0.75rem 0.75rem 0;
   }
   .container-menu_mouvement-icon{
      @extend %flex-align-justify;
