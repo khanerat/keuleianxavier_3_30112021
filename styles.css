@@ -328,6 +328,8 @@ li {
 }
 
 .containerF {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   flex: 1;
 }
@@ -342,20 +344,29 @@ li {
 }
 
 .coeur {
-  width: 81%;
-  background-color: initial;
-  border: 0 solid transparent;
-  padding: 0;
-  justify-content: flex-end;
+  display: flex;
+  width: 2.5rem;
   cursor: pointer;
-  position: relative;
+  font-size: 25px;
 }
-.coeur .coeur:hover {
+.coeur .coeur-icon-vide {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  bottom: 10px;
+  right: 0;
+  font-size: 25px;
+}
+.coeur .coeur-icon-full {
+  filter: #6ca923;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  opacity: 0;
+  font-size: 25px;
+  background: linear-gradient(to bottom, #9356DC 100%);
+  transition: 0.3s ease;
+}
+.coeur .coeur-icon-full:hover {
+  opacity: 1;
 }
 
 .image {
@@ -386,24 +397,30 @@ li {
 
 .coeur {
   display: flex;
-  height: 47px;
   width: 2.5rem;
-  background-color: initial;
-  border: 0 solid transparent;
-  padding: 0;
+  height: 47px;
   cursor: pointer;
-  position: relative;
   font-size: 25px;
-  opacity: 1;
+  position: relative;
 }
-.coeur:hover {
+.coeur .coeur-icon-vide {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 10px;
   right: 0;
-  bottom: 0;
+  font-size: 25px;
+}
+.coeur .coeur-icon-full {
+  filter: #6ca923;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  opacity: 0;
+  font-size: 25px;
+  background: linear-gradient(to bottom, #9356DC 100%);
+  transition: 0.3s ease;
+}
+.coeur .coeur-icon-full:hover {
   opacity: 1;
-  background-color: #9356DC;
 }
 
 /**menu**/
@@ -640,7 +657,7 @@ li {
   text-decoration: none;
 }
 
-.filtreBouton, #cRestaurant, .containerF {
+.filtreBouton, #cRestaurant {
   display: flex;
   flex-direction: row;
 }
@@ -651,7 +668,7 @@ li {
   justify-content: center;
 }
 
-.conteneurM, .containerM, .coeur, #block {
+.conteneurM, .containerM, #block {
   display: flex;
   align-items: center;
 }
@@ -689,14 +706,6 @@ li {
     transform: scale(1);
   }
 }
-@keyframes itemAppear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 @keyframes heart {
   0% {
     opacity: 0;
@@ -706,6 +715,14 @@ li {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

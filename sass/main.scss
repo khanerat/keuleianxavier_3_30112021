@@ -1,7 +1,12 @@
+//layout//
 @import 'layout/footer';
 @import 'layout/header';
+
+//pages//
 @import 'pages/home';
 @import 'pages/menu';
+
+//utils//
 @import 'utils/animation';
 @import 'utils/mixin';
 @import 'utils/forme';
