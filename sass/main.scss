@@ -1,3 +1,12 @@
+//utils//
+@import 'utils/mixin';
+@import 'utils/variables';
+@import 'utils/animation';
+@import 'utils/forme';
+@import 'utils/placeholders';
+@import 'utils/keyframes';
+@import 'utils/maps';
+
 //layout//
 @import 'layout/footer';
 @import 'layout/header';
@@ -6,11 +15,3 @@
 @import 'pages/home';
 @import 'pages/menu';
 
-//utils//
-@import 'utils/animation';
-@import 'utils/mixin';
-@import 'utils/forme';
-@import 'utils/placeholders';
-@import 'utils/variables';
-@import 'utils/keyframes';
-@import 'utils/maps';

@@ -150,6 +150,7 @@ h2{
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    
 
     @media screen and(max-width:768px){
         flex-direction:column;
@@ -161,20 +162,18 @@ h2{
 /**degrader-et-ombre**/
 
 .case-1:hover{
-    transform:scale(1.15);
-    box-shadow:#676767 0px 7px 20px 5px;
+    background-color: #f7f0ff;
     cursor:pointer;
+      
 
 }
 .case-2:hover{
-    transform:scale(1.15);
-    box-shadow:#676767 0px 7px 20px 5px;
+    background-color: #f7f0ff;
     cursor:pointer;
 
 }
 .case-3:hover{
-   transform:scale(1.15);
-   box-shadow:#676767 0px 7px 20px 5px;
+    background-color: #f7f0ff;
    cursor:pointer;
 }
 
@@ -237,7 +236,11 @@ li {
        height: 20px;
        align-items: center;
        top: 2px;
-            
+       
+           
+}
+.fa-store{
+    color:$violet-primaire;
 }
 
 
@@ -248,8 +251,9 @@ li {
  
     background-color:#f2f2f2;
     padding:1.5rem 1rem;
+    box-sizing:border-box;
     @media screen and(max-width:768px){
-        width:95%;
+        width:100%;
     }
     
 }
