@@ -248,13 +248,25 @@ li {
  
     background-color:#f2f2f2;
     padding:1.5rem 1rem;
+    @media screen and(max-width:768px){
+        width:95%;
+    }
     
-    
+}
+.containerR{
+    max-width:1300px;
+    justify-content: center;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    position: relative;
+    margin:auto;
+   margin-top:-40px;
+
+   @media screen and (max-width:528px){
+       max-width:1000px;
+   }
 }
 
-.titreRestaurant{
-    
-}
 
 #cRestaurant{
 
@@ -263,7 +275,7 @@ li {
     column-gap: 3rem;
     row-gap: 2rem;
 
-  
+ 
         
 }
 
@@ -275,7 +287,10 @@ li {
     color: inherit;
     display: block;
     width:48%;
-    @media screen and (max-width:768px){
+    @media screen and (min-width:848px) and (max-width:1248px){
+        width:47%;
+    }
+    @media screen and (max-width:847px){
         width:100%;
     }
 }
