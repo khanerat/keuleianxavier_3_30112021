@@ -17,7 +17,7 @@
     max-width:1300px;
     justify-content: center;
     border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
+    background-color: $fond-whiteSmoke;
     position: relative;
     margin:auto;
    margin-top:-40px;
@@ -38,54 +38,22 @@
 
 }
 
-.coeur{
-    display:flex;
-    width: 2.5rem;
-    height:47px;
-    cursor: pointer;
-    font-size:25px;
-    position:relative;
-    
-    
-
-      .coeur-icon-vide{
-         
-            position: absolute;
-            bottom:10px;
-            right:0;
-            font-size:25px;
-      }
-      .coeur-icon-full{
-        
-          position:absolute;
-          right:0;
-          bottom:10px;
-          opacity:0;
-          font-size:25px;         
-          background-size:100%;
-          -webkit-background-clip:text;
-          -webkit-text-fill-color:transparent;
-          background-image:linear-gradient(to bottom, #FF79DA, #9356DC);
-          transition:0.3s ease;
-          &:hover{
-              opacity:1;
-              
-          }     
-        
-       }
-
-}
+@include coeurM;
 
 /**menu**/
 
 
 .menu{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0vw;
+    /*
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content:center;
     width:100%;
-
+*/
 }
 
 /**entrées-plats-desserts**/
@@ -105,7 +73,7 @@
     font-weight: normal;
     
     &::after{
-        background-color:#99E2D0;
+        background-color:$vert-tertiaire;
         bottom:0;
         height:4px;
         left:0;
@@ -170,7 +138,7 @@
  }
 
  .container-menu_validation{
-    background-color: #99e2d0;
+    background-color: $vert-tertiaire;
     margin: -1rem -7.5rem -1rem 1rem;
     width: 6.5rem;
     @extend %flex-align-justify;
@@ -187,7 +155,7 @@
      height:1.6rem;
      border-radius:100px;
      background-color:white;
-     color:#99E2D0;
+     color:$vert-tertiaire;
      transform:rotate(180deg);
      transition-duration:0.7s;
 
@@ -198,30 +166,11 @@
     transform:rotate(0);
  }
  .container-menu_icon{
-       color:#99E2D0;
+       color:$vert-tertiaire;
    }
 
 }
 
 /**bouton**/
 
-.bouton{
-    
-    justify-content:center;
-    border:0px solid black;
-    border-radius:2rem 2rem 2rem 2rem;
-    background:linear-gradient(#9356DC,#FF79DA);
-    box-shadow:0 0 10px rgb(139, 136, 136);
-    cursor: pointer; 
-    font-size: large;
-    color:white;
-    padding:15px;
-    margin-bottom:20px;
-
-      &:hover{
-          transform:scale(1.15);   
-          opacity:0.9;     
-          box-shadow:#676767 0px 7px 20px 5px;
-          cursor:pointer;
- }
-}
+@include button;

@@ -317,7 +317,7 @@ h2 {
 
 #presentation {
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   padding: 30px;
 }
 
@@ -351,6 +351,7 @@ h2 {
   font-size: large;
   color: white;
   padding: 15px;
+  margin-bottom: 20px;
 }
 .bouton:hover {
   transform: scale(1.15);
@@ -388,7 +389,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 0;
+  left: -6px;
   border-radius: 1rem;
   font-size: 13px;
   font-weight: 500;
@@ -412,17 +413,20 @@ h2 {
 
 /**degrader-et-ombre**/
 .case-1:hover {
-  background-color: #f7f0ff;
+  background-color: #F7F0FF;
   cursor: pointer;
+}
+.case-1:hover:hover .fa-store {
+  color: #9356DC;
 }
 
 .case-2:hover {
-  background-color: #f7f0ff;
+  background-color: #F7F0FF;
   cursor: pointer;
 }
 
 .case-3:hover {
-  background-color: #f7f0ff;
+  background-color: #F7F0FF;
   cursor: pointer;
 }
 
@@ -492,7 +496,7 @@ li {
 
 /**restaurant**/
 .restaurant {
-  background-color: #f2f2f2;
+  background-color: #F2F2F2;
   padding: 1.5rem 1rem;
   box-sizing: border-box;
 }
@@ -506,7 +510,7 @@ li {
   max-width: 1300px;
   justify-content: center;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   position: relative;
   margin: auto;
   margin-top: -40px;
@@ -629,7 +633,7 @@ li {
   max-width: 1300px;
   justify-content: center;
   border-radius: 2rem 2rem 0 0;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   position: relative;
   margin: auto;
   margin-top: -40px;
@@ -679,10 +683,15 @@ li {
 /**menu**/
 .menu {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  padding: 0 0vw;
+  /*
+      display:flex;
+      flex-direction: row;
+      flex-wrap:wrap;
+      justify-content:center;
+      width:100%;
+  */
 }
 
 /**entrées-plats-desserts**/
@@ -754,7 +763,7 @@ li {
   padding-left: 0.5rem;
 }
 .container-menu .container-menu_validation {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   margin: -1rem -7.5rem -1rem 1rem;
   width: 6.5rem;
   transition-duration: 0.5s;
