@@ -13,7 +13,7 @@
 
    }
  }
-.container{
+.container{ 
     max-width:1300px;
     justify-content: center;
     border-radius: 2rem 2rem 0 0;
@@ -22,6 +22,7 @@
     margin:auto;
    margin-top:-40px;
 }
+
 /**block**/
 
 #block{
@@ -44,29 +45,40 @@
 
 
 .menu{
+   display:grid;
+
+   @media (min-width:64rem) {
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+  }
+}   /*
     display: flex;
     flex-direction: column;
     padding: 0 0vw;
-    /*
+    
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content:center;
     width:100%;
-*/
-}
 
+}
+*/
 /**entrées-plats-desserts**/
 
 .sous-menu{
+   max-width: 100%;
+  overflow: hidden;
+  padding: 0 1rem;
+    /*
     display:flex;
     flex-direction:column;
     width: 100%;
     overflow: hidden;
     padding:1rem;
+*/
 
-
-    .sous-menu-title{
+  .sous-menu-title{
     text-transform: uppercase;
     position: relative;
     padding-bottom: 1rem;
@@ -98,7 +110,7 @@
     box-shadow:0.25rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
     overflow:hidden;
     cursor:pointer;
-    animation: Appear 0.6s;
+    animation: Appear .6s;
     animation-timing-function:ease-in-out;
     animation-fill-mode:both;
     transform:scale(1);
@@ -111,9 +123,11 @@
 
    }
    .container-menu_menuT{
+       /*
     flex:1;
     font-weight:bold;
     font-size:16px;
+    */
     margin:0;
     white-space: nowrap;
     text-overflow: ellipsis;

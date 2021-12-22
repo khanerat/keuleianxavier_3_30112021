@@ -7,18 +7,11 @@
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: #f7f0ff;
+  background-color: #F7F0FF;
   animation: loader 3s forwards;
   opacity: 0;
   object-fit: cover;
   z-index: 10000;
-  /*
-  @media screen and (min-width:365px)and(max-width:449px){
-      width:95%;
-      height:1430px;
-
-  }
-  */
 }
 
 .loader-spin {
@@ -682,25 +675,40 @@ li {
 
 /**menu**/
 .menu {
-  display: flex;
-  flex-direction: column;
-  padding: 0 0vw;
-  /*
-      display:flex;
-      flex-direction: row;
-      flex-wrap:wrap;
-      justify-content:center;
-      width:100%;
-  */
+  display: grid;
+}
+@media (min-width: 64rem) {
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
 }
 
+/*
+    display: flex;
+    flex-direction: column;
+    padding: 0 0vw;
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:center;
+    width:100%;
+
+}
+*/
 /**entrées-plats-desserts**/
 .sous-menu {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   overflow: hidden;
-  padding: 1rem;
+  padding: 0 1rem;
+  /*
+      display:flex;
+      flex-direction:column;
+      width: 100%;
+      overflow: hidden;
+      padding:1rem;
+  */
 }
 .sous-menu .sous-menu-title {
   text-transform: uppercase;
@@ -741,9 +749,11 @@ li {
   overflow: hidden;
 }
 .container-menu .container-menu_menuT {
-  flex: 1;
-  font-weight: bold;
-  font-size: 16px;
+  /*
+  flex:1;
+  font-weight:bold;
+  font-size:16px;
+  */
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
