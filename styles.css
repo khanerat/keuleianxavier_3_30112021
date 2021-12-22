@@ -1,5 +1,57 @@
 @charset "UTF-8";
 /**home-menu**/
+@keyframes spin {
+  0% {
+    opacity: 100%;
+    transform: rotate(0deg);
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes validation-coeur {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /**loader**/
 .loader {
   position: fixed;
@@ -75,16 +127,22 @@
   animation-delay: 2.7s;
 }
 
-.menu-1 {
-  animation: transition-duration 0.6s;
-}
-
-.menu-2 {
-  animation: transition-duration 0.8s;
-}
-
-.menu-3 {
+.delay-1,
+.delay-2,
+.delay-3 {
   animation: transition-duration 1s;
+}
+
+.delay-4,
+.delay-5,
+.delay-6 {
+  animation: transition-duration 2s;
+}
+
+.delay-7,
+.delay-8,
+.delay-9 {
+  animation: transition-duration 3s;
 }
 
 .logo,
@@ -135,58 +193,6 @@ li {
   align-items: center;
 }
 
-@keyframes spin {
-  0% {
-    opacity: 100%;
-    transform: rotate(0deg);
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0;
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes validation-coeur {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes Appear {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /**footer**/
 footer {
   width: 100%;
@@ -613,7 +619,7 @@ li {
 
 .image {
   width: 100%;
-  height: 650px;
+  height: 500px;
 }
 @media screen and (max-width: 768px) {
   .image {
@@ -676,6 +682,8 @@ li {
 /**menu**/
 .menu {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 @media (min-width: 64rem) {
   .menu {
@@ -684,31 +692,11 @@ li {
   }
 }
 
-/*
-    display: flex;
-    flex-direction: column;
-    padding: 0 0vw;
-
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:center;
-    width:100%;
-
-}
-*/
 /**entrées-plats-desserts**/
 .sous-menu {
   max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
-  /*
-      display:flex;
-      flex-direction:column;
-      width: 100%;
-      overflow: hidden;
-      padding:1rem;
-  */
 }
 .sous-menu .sous-menu-title {
   text-transform: uppercase;
@@ -737,8 +725,9 @@ li {
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: Appear 0.6s;
-  animation-timing-function: ease-in-out;
+  transition-duration: 3s;
+  animation: itemAppear 0.6s;
+  animation-duration: ease-in-out;
   animation-fill-mode: both;
   transform: scale(1);
 }
@@ -749,11 +738,6 @@ li {
   overflow: hidden;
 }
 .container-menu .container-menu_menuT {
-  /*
-  flex:1;
-  font-weight:bold;
-  font-size:16px;
-  */
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -799,6 +783,14 @@ li {
 }
 
 /**bouton**/
+.box-btn {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
 .bouton {
   justify-content: center;
   border: 0px solid black;
