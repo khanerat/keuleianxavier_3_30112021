@@ -352,14 +352,23 @@ h2 {
     flex-direction: column;
   }
 }
+#bouton2 #bouton2:hover {
+  background-color: #F7F0FF;
+}
+
+.logoF {
+  padding: 1.5rem;
+  margin: 1rem 0 1rem 0.75rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+  border-radius: 1.25rem;
+  background-color: #F6F6F6;
+  position: relative;
+}
 
 /**degrader-et-ombre**/
 .case-1:hover {
   background-color: #F7F0FF;
   cursor: pointer;
-}
-.case-1:hover:hover .fa-store {
-  color: #9356DC;
 }
 
 .case-2:hover {
@@ -373,15 +382,6 @@ h2 {
 }
 
 /**logo-phone-liste-magasin**/
-.logoF {
-  padding: 1.5rem;
-  margin: 1rem 0 1rem 0.75rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
-  border-radius: 1.25rem;
-  background-color: #F6F6F6;
-  position: relative;
-}
-
 .font {
   margin-right: 1rem;
   color: #7e7e7e;
@@ -430,10 +430,6 @@ li {
   height: 20px;
   align-items: center;
   top: 2px;
-}
-
-.fa-store {
-  color: #9356DC;
 }
 
 /**restaurant**/
