@@ -90,18 +90,6 @@
   }
 }
 
-/**animation-menu**/
-/*
-.delay-1{animation-delay:1s;}
-.delay-2{animation-delay:1.2s;}
-.delay-3{animation-delay:1.5s;}
-.delay-4{animation-delay:1.7s;}
-.delay-5{animation-delay:1.9s;}
-.delay-6{animation-delay:2.1s;}
-.delay-7{animation-delay:2.3s;}
-.delay-8{animation-delay:2.5s;}
-.delay-9{animation-delay:2.7s;}
-*/
 /**general**/
 .logo,
 h1,
@@ -656,6 +644,7 @@ li {
   max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
+  animation: itemAppear 1s ease-in-out both;
 }
 .sous-menu .sous-menu-title {
   text-transform: uppercase;
@@ -683,7 +672,7 @@ li {
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 1s ease-in-out both;
+  animation: itemAppear 3s ease-in-out both;
 }
 .container-menu:nth-child(1) {
   animation-delay: 100ms;
@@ -693,6 +682,24 @@ li {
 }
 .container-menu:nth-child(3) {
   animation-delay: 300ms;
+}
+.container-menu:nth-child(4) {
+  animation-delay: 400ms;
+}
+.container-menu:nth-child(5) {
+  animation-delay: 500ms;
+}
+.container-menu:nth-child(6) {
+  animation-delay: 600ms;
+}
+.container-menu:nth-child(7) {
+  animation-delay: 700ms;
+}
+.container-menu:nth-child(8) {
+  animation-delay: 800ms;
+}
+.container-menu:nth-child(9) {
+  animation-delay: 900ms;
 }
 .container-menu .container-menu_containerT {
   flex: 1;

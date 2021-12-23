@@ -20,7 +20,7 @@
     background-color: $fond-whiteSmoke;
     position: relative;
     margin:auto;
-   margin-top:-40px;
+    margin-top:-40px;
 }
 
 /**block**/
@@ -61,15 +61,16 @@
    max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
+  animation: itemAppear 1s ease-in-out both ;
   
 
-  .sous-menu-title{
+   .sous-menu-title{
     text-transform: uppercase;
     position: relative;
     padding-bottom: 1rem;
     font-weight: normal;
     
-    &::after{
+     &::after{
         background-color:$vert-tertiaire;
         bottom:0;
         height:4px;
@@ -77,8 +78,8 @@
         position:absolute;
         width:3rem;
         content:"";
-    }
-  } 
+     }
+   } 
 
 }
 
@@ -94,12 +95,12 @@
     box-shadow:0.25rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
     overflow:hidden;
     cursor:pointer;
-    animation: itemAppear 1s ease-in-out both ;
-    @for $i from 1 through 3 {
+    animation: itemAppear 3s ease-in-out both ;
+     @for $i from 1 through 9 {
         &:nth-child(#{$i}) {
             animation-delay:100ms * $i;
         }
-    }
+     }
     
     
     .container-menu_containerT{
@@ -109,44 +110,44 @@
        overflow: hidden;
 
    }
-   .container-menu_menuT{
+    .container-menu_menuT{
     
     margin:0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 
- }
- .container-menu_description{
+   }
+   .container-menu_description{
     margin: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 
- }
+   }
 
- .container-menu_prix{
+   .container-menu_prix{
     font-weight: 700;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 0.5rem;
 
- }
+   }
 
- .container-menu_validation{
+   .container-menu_validation{
     background-color: $vert-tertiaire;
     margin: -1rem -7.5rem -1rem 1rem;
     width: 6.5rem;
     @extend %flex-align-justify;
     transition-duration: 0.5s;
 
- }
-  &:hover .container-menu_validation{
+   }
+   &:hover .container-menu_validation{
       margin-right:-17px;
       border-radius:0 0.75rem 0.75rem 0;
-  }
-  .container-menu_mouvement-icon{
+   }
+   .container-menu_mouvement-icon{
      @extend %flex-align-justify;
      width:1.6rem;
      height:1.6rem;
@@ -157,12 +158,12 @@
      transition-duration:0.7s;
 
     
- }
+   }
 
- &:hover .container-menu_mouvement-icon{
+   &:hover .container-menu_mouvement-icon{
     transform:rotate(0);
- }
- .container-menu_icon{
+   }
+   .container-menu_icon{
        color:$vert-tertiaire;
    }
 

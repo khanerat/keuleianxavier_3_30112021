@@ -4,9 +4,9 @@
 .loader{
     position: fixed;
     width:100%;
-   height:100vh;
-   top:0;
-   left:0;
+    height:100vh;
+    top:0;
+    left:0;
     background-color:  $ghost-white;
     @extend %flex-align-justify;
     animation: loader 3s forwards;
@@ -41,18 +41,6 @@
 }
 
 
-/**animation-menu**/
 
-/*
-.delay-1{animation-delay:1s;}
-.delay-2{animation-delay:1.2s;}
-.delay-3{animation-delay:1.5s;}
-.delay-4{animation-delay:1.7s;}
-.delay-5{animation-delay:1.9s;}
-.delay-6{animation-delay:2.1s;}
-.delay-7{animation-delay:2.3s;}
-.delay-8{animation-delay:2.5s;}
-.delay-9{animation-delay:2.7s;}
-*/
 
 

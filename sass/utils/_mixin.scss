@@ -37,64 +37,64 @@
     footer{
         width:100%;
         position:relative;
-         background-color: black;
-         color:white;
+        background-color: black;
+        color:white;
          
      }
      
      #conteneurFooterFull{
          
-         display:flex;
-         margin:0 auto;
-         padding:15px;
-         flex-direction:column;
+        display:flex;
+        margin:0 auto;
+        padding:15px;
+        flex-direction:column;
          
          
      }
      
      .logoFooter{
-         filter:invert(100%);
+        filter:invert(100%);
         
          
      }
      .blockFooter{
-         display:contents;
+        display:contents;
      }
      footer p {
-         padding-bottom: 20px;
-         font-size: 15px;
-         padding-left: 0;
-         font-size:large;
+        padding-bottom: 20px;
+        font-size: 15px;
+        padding-left: 0;
+        font-size:large;
          
       }
      
        footer li{
-         list-style-type: none;
-         margin-bottom: 10px;
+        list-style-type: none;
+        margin-bottom: 10px;
          
       }
        
        footer li:hover{
-         text-decoration: none;
-         cursor: pointer;
+        text-decoration: none;
+        cursor: pointer;
       }
      
      #imageF{
-         width:70%;
-         display:flex;
+        width:70%;
+        display:flex;
            
      }
      
      .imageFooter{
-         width:30%;
-         display:flex;
-         color:white;
+        width:30%;
+        display:flex;
+        color:white;
          
      }
      
      .footerTexte{
-         color:#FFFF;
-         text-decoration:none;
+        color:#FFFF;
+        text-decoration:none;
      }
      
     
@@ -138,10 +138,10 @@
     
           .coeur-icon-vide{
              
-                position: absolute;
-                bottom:10px;
-                right:0;
-                font-size:25px;
+              position: absolute;
+              bottom:10px;
+              right:0;
+              font-size:25px;
           }
           .coeur-icon-full{
             
@@ -176,10 +176,10 @@
     
           .coeur-icon-vide{
              
-                position: absolute;
-                bottom:10px;
-                right:0;
-                font-size:25px;
+              position: absolute;
+              bottom:10px;
+              right:0;
+              font-size:25px;
           }
           .coeur-icon-full{
             
