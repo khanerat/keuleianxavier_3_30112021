@@ -98,7 +98,7 @@
     animation: itemAppear 3s ease-in-out both ;
      @for $i from 1 through 9 {
         &:nth-child(#{$i}) {
-            animation-delay:100ms * $i;
+            animation-delay:200ms * $i;
         }
      }
     
