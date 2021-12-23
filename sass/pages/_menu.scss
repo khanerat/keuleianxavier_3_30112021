@@ -38,8 +38,10 @@
     font-family: "Shrikhand,cursive";
 
 }
+/**coeur**/
 
-@include coeurM;
+    @include coeurM;
+
 
 /**menu**/
 
@@ -92,8 +94,13 @@
     box-shadow:0.25rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
     overflow:hidden;
     cursor:pointer;
-    animation: itemAppear 3s ease-in-out forwards;
-    transform:scale(1);
+    animation: itemAppear 1s ease-in-out both ;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+            animation-delay:100ms * $i;
+        }
+    }
+    
     
     .container-menu_containerT{
        flex:1;

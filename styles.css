@@ -91,42 +91,18 @@
 }
 
 /**animation-menu**/
-.delay-1 {
-  animation-delay: 1s;
-}
-
-.delay-2 {
-  animation-delay: 1.2s;
-}
-
-.delay-3 {
-  animation-delay: 1.5s;
-}
-
-.delay-4 {
-  animation-delay: 1.7s;
-}
-
-.delay-5 {
-  animation-delay: 1.9s;
-}
-
-.delay-6 {
-  animation-delay: 2.1s;
-}
-
-.delay-7 {
-  animation-delay: 2.3s;
-}
-
-.delay-8 {
-  animation-delay: 2.5s;
-}
-
-.delay-9 {
-  animation-delay: 2.7s;
-}
-
+/*
+.delay-1{animation-delay:1s;}
+.delay-2{animation-delay:1.2s;}
+.delay-3{animation-delay:1.5s;}
+.delay-4{animation-delay:1.7s;}
+.delay-5{animation-delay:1.9s;}
+.delay-6{animation-delay:2.1s;}
+.delay-7{animation-delay:2.3s;}
+.delay-8{animation-delay:2.5s;}
+.delay-9{animation-delay:2.7s;}
+*/
+/**general**/
 .logo,
 h1,
 h2,
@@ -231,6 +207,7 @@ footer li:hover {
   text-decoration: none;
 }
 
+/**header**/
 .conteneurHeader {
   flex-wrap: wrap;
   width: 100%;
@@ -571,6 +548,7 @@ li {
   margin: 0;
 }
 
+/**coeur**/
 .coeur {
   display: flex;
   width: 2.5rem;
@@ -631,6 +609,7 @@ li {
   font-family: "Shrikhand,cursive";
 }
 
+/**coeur**/
 .coeur {
   display: flex;
   width: 2.5rem;
@@ -704,8 +683,16 @@ li {
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 3s ease-in-out forwards;
-  transform: scale(1);
+  animation: itemAppear 1s ease-in-out both;
+}
+.container-menu:nth-child(1) {
+  animation-delay: 100ms;
+}
+.container-menu:nth-child(2) {
+  animation-delay: 200ms;
+}
+.container-menu:nth-child(3) {
+  animation-delay: 300ms;
 }
 .container-menu .container-menu_containerT {
   flex: 1;
