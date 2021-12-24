@@ -12,9 +12,9 @@
     animation: loader 3s forwards;
     opacity: 0;
     object-fit:cover;
-    z-index:10000;
-    
+    z-index:10000;  
 }
+
 .loader-spin{
     
     @extend %flex-align-justify;

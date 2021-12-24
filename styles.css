@@ -219,7 +219,8 @@ footer li:hover {
 /**map**/
 .conteneurM {
   position: relative;
-  background-color: #F6F6F6;
+  box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.15);
+  background-color: #e6e6e6;
 }
 
 #map {
@@ -333,14 +334,14 @@ h2 {
   justify-content: center;
   left: -6px;
   border-radius: 1rem;
-  font-size: 13px;
+  font-size: 19px;
   font-weight: 500;
-  padding-left: 9px;
-  padding-right: 7px;
+  padding-left: 6px;
+  padding-right: 6px;
   z-index: 2;
 }
 
-#bouton2 {
+.bouton2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -348,11 +349,11 @@ h2 {
   padding: 0;
 }
 @media screen and (max-width: 768px) {
-  #bouton2 {
+  .bouton2 {
     flex-direction: column;
   }
 }
-#bouton2 #bouton2:hover {
+.bouton2 .bouton2:hover {
   background-color: #F7F0FF;
 }
 

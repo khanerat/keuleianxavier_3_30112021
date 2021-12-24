@@ -10,9 +10,9 @@
    @media screen and(max-width:768px){
        width:100%;
        height:auto;
-
    }
  }
+
 .container{ 
     max-width:1300px;
     justify-content: center;
@@ -36,8 +36,8 @@
 
 .titreP{
     font-family: "Shrikhand,cursive";
-
 }
+
 /**coeur**/
 
     @include coeurM;
@@ -49,7 +49,6 @@
 .menu{
    display:grid;
   
-
    @media (min-width:64rem) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -108,22 +107,21 @@
        white-space: nowrap;
        text-overflow: ellipsis;
        overflow: hidden;
-
    }
+
     .container-menu_menuT{
     
     margin:0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
    }
+
    .container-menu_description{
     margin: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
    }
 
    .container-menu_prix{
@@ -132,7 +130,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 0.5rem;
-
    }
 
    .container-menu_validation{
@@ -141,12 +138,13 @@
     width: 6.5rem;
     @extend %flex-align-justify;
     transition-duration: 0.5s;
-
    }
+
    &:hover .container-menu_validation{
       margin-right:-17px;
       border-radius:0 0.75rem 0.75rem 0;
    }
+
    .container-menu_mouvement-icon{
      @extend %flex-align-justify;
      width:1.6rem;
@@ -156,13 +154,12 @@
      color:$vert-tertiaire;
      transform:rotate(180deg);
      transition-duration:0.7s;
-
-    
    }
 
    &:hover .container-menu_mouvement-icon{
     transform:rotate(0);
    }
+
    .container-menu_icon{
        color:$vert-tertiaire;
    }
@@ -178,4 +175,5 @@
     align-items:center;
     padding: 3rem 0;
 }
+
 @include button;

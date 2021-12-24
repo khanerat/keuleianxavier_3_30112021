@@ -6,7 +6,8 @@
    .conteneurM{
     position: relative;
    @extend %flex-align;
-    background-color:$fond-whiteSmoke;
+    box-shadow: inset 0px 3px 3px rgb(0 0 0 / 15%);
+    background-color:#e6e6e6;
   
 }
 
@@ -122,13 +123,13 @@ h2{
     justify-content:center;
     left:-6px;
     border-radius:1rem;
-    font-size:13px;
+    font-size:19px;
     font-weight:500;
-    padding-left:9px;
-    padding-right:7px;
+    padding-left:6px;
+    padding-right:6px;
     z-index:2;
 }
-#bouton2{
+.bouton2{
     width:100%;
     display:flex;
     justify-content: space-between;
@@ -139,7 +140,7 @@ h2{
         flex-direction:column;
 
      }
-    #bouton2:hover{
+    .bouton2:hover{
         
         background-color:$ghost-white;
         
@@ -219,8 +220,7 @@ li {
     margin-left: 25px;
     border:1px solid black;
     border-radius:1rem 1rem 1rem 1rem;
-    cursor: pointer;
-       
+    cursor: pointer;    
        
 }
 
@@ -228,13 +228,10 @@ li {
     width: 20px;
     height: 20px;
     align-items: center;
-    top: 2px;
-       
-           
+    top: 2px;      
 }
 
-
-
+  
 /**restaurant**/
 
 .restaurant{
@@ -270,9 +267,7 @@ li {
     flex-wrap:wrap;
     column-gap: 3rem;
     row-gap: 2rem;
-
- 
-        
+      
 }
 
 .conteneur{
