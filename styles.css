@@ -123,7 +123,7 @@ li {
   text-decoration: none;
 }
 
-#cRestaurant, .filtreBouton {
+#cRestaurant {
   display: flex;
   flex-direction: row;
 }
@@ -325,7 +325,39 @@ h2 {
   font-weight: bold;
 }
 
-.number {
+.bouton2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  /*
+  .fa-mobile-alt:hover{
+      color: $violet-primaire;
+  }
+  .fa-list-ol{
+      color: $violet-primaire;
+  }
+  .fa-store{
+      color: $violet-primaire;
+  }
+  */
+  /*
+  .bouton2-icon::after{
+      content:"";
+      background-color:$ghost-white;
+      align-items: center;
+      &:hover{
+          background-color:$ghost-white;
+      }
+      */
+}
+@media screen and (max-width: 768px) {
+  .bouton2 {
+    flex-direction: column;
+  }
+}
+.bouton2 .bouton2-number {
   position: absolute;
   color: #fff;
   background-color: #9356DC;
@@ -340,24 +372,7 @@ h2 {
   padding-right: 6px;
   z-index: 2;
 }
-
-.bouton2 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-@media screen and (max-width: 768px) {
-  .bouton2 {
-    flex-direction: column;
-  }
-}
-.bouton2 .bouton2:hover {
-  background-color: #F7F0FF;
-}
-
-.logoF {
+.bouton2 .bouton2-logoF {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
@@ -365,72 +380,48 @@ h2 {
   background-color: #F6F6F6;
   position: relative;
 }
-
-/**degrader-et-ombre**/
-.case-1:hover {
-  background-color: #F7F0FF;
-  cursor: pointer;
-}
-
-.case-2:hover {
-  background-color: #F7F0FF;
-  cursor: pointer;
-}
-
-.case-3:hover {
-  background-color: #F7F0FF;
-  cursor: pointer;
-}
-
-/**logo-phone-liste-magasin**/
-.font {
-  margin-right: 1rem;
-  color: #7e7e7e;
-}
-
-ol {
-  display: block;
-  list-style-type: decimal;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-li {
+.bouton2 li {
   text-decoration: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  li {
+  .bouton2 li {
     font-size: small;
   }
 }
 @media screen and (max-width: 768px) {
-  li {
+  .bouton2 li {
     font-size: small;
   }
 }
-
-.click-me {
-  text-decoration: none;
-}
-
-.filtreBouton {
-  width: 100%;
-  justify-content: space-around;
-  position: relative;
-  margin-left: 25px;
-  border: 1px solid black;
-  border-radius: 1rem 1rem 1rem 1rem;
-  cursor: pointer;
-}
-
-.font {
+.bouton2 .bouton2-icon {
   width: 20px;
   height: 20px;
   align-items: center;
   top: 2px;
+}
+.bouton2 .case1:hover {
+  background-color: #F7F0FF;
+  cursor: pointer;
+}
+.bouton2 .case1:hover .fa-mobile-alt::after {
+  content: "";
+  color: #9356DC;
+}
+.bouton2 .case2:hover {
+  background-color: #F7F0FF;
+  cursor: pointer;
+}
+.bouton2 .case2:hover .fa-list-ol::after {
+  content: "";
+  color: #9356DC;
+}
+.bouton2 .case3:hover {
+  background-color: #F7F0FF;
+  cursor: pointer;
+}
+.bouton2 .case3:hover .fa-store::after {
+  content: "";
+  color: #9356DC;
 }
 
 /**restaurant**/

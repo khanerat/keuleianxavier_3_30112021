@@ -114,21 +114,6 @@ h2{
 
 }
 
-.number{
-    position:absolute;
-    color:#fff;
-    background-color:$violet-primaire;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    left:-6px;
-    border-radius:1rem;
-    font-size:19px;
-    font-weight:500;
-    padding-left:6px;
-    padding-right:6px;
-    z-index:2;
-}
 .bouton2{
     width:100%;
     display:flex;
@@ -140,97 +125,97 @@ h2{
         flex-direction:column;
 
      }
-    .bouton2:hover{
-        
+
+    .bouton2-number{
+        position:absolute;
+        color:#fff;
+        background-color:$violet-primaire;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        left:-6px;
+        border-radius:1rem;
+        font-size:19px;
+        font-weight:500;
+        padding-left:6px;
+        padding-right:6px;
+        z-index:2;
+    }
+
+
+
+    .bouton2-logoF{
+        padding: 1.5rem;
+        margin: 1rem 0 1rem 0.75rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+        border-radius: 1.25rem;
+        background-color:$fond-whiteSmoke;
+        position: relative;
+    }
+
+    li {
+    
+    text-decoration: none;
+        @media screen and (min-width:768px) and (max-width:1024px){
+          font-size:small;
+        }
+        @media screen and (max-width:768px){
+          font-size:small;
+        }
+    }
+
+   .bouton2-icon{
+      width: 20px;
+      height: 20px;
+      align-items: center;
+      top: 2px;      
+    }
+    /*
+    .fa-mobile-alt:hover{
+        color: $violet-primaire;
+    }
+    .fa-list-ol{
+        color: $violet-primaire;
+    }
+    .fa-store{
+        color: $violet-primaire;
+    }
+    */
+    /*
+    .bouton2-icon::after{
+        content:"";
         background-color:$ghost-white;
-        
-    }
-}
-.logoF{
-    padding: 1.5rem;
-    margin: 1rem 0 1rem 0.75rem;
-    box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
-    border-radius: 1.25rem;
-    background-color:$fond-whiteSmoke;
-    position: relative;
-}
-
-/**degrader-et-ombre**/
-
-
-.case-1:hover{
-    background-color: $ghost-white;
-    cursor:pointer;
-     
-
-}
-
-.case-2:hover{
-    background-color: $ghost-white;
-    cursor:pointer;
-
-}
-.case-3:hover{
-    background-color: $ghost-white;
-    cursor:pointer;
-}
-
-/**logo-phone-liste-magasin**/
-
-
-
-.font{
-    margin-right: 1rem;
-    color: #7e7e7e;
-
+        align-items: center;
+        &:hover{
+            background-color:$ghost-white;
+        }
+        */
     
-}
-
-ol {
-    display: block;
-    list-style-type: decimal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-li {
-    
-    text-decoration: none;
-    @media screen and (min-width:768px) and (max-width:1024px){
-        font-size:small;
+    .case1:hover{
+        background-color: $ghost-white;
+        cursor:pointer;
+        .fa-mobile-alt::after{
+            content:"";
+            color:$violet-primaire;
+        }
     }
-    @media screen and (max-width:768px){
-        font-size:small;
+    .case2:hover{
+        background-color: $ghost-white;
+        cursor:pointer;
+        .fa-list-ol::after{
+            content:"";
+            color:$violet-primaire;
+        }      
+    }
+    .case3:hover{
+        background-color: $ghost-white;
+        cursor:pointer;
+        .fa-store::after{
+            content:"";
+            color:$violet-primaire;
+        }
     }
 }
-
-
- .click-me{
-    text-decoration: none;
- }
-
-.filtreBouton{
-    width:100%;
-    @extend %flex-direction;   
-    justify-content: space-around;
-    position: relative;
-    margin-left: 25px;
-    border:1px solid black;
-    border-radius:1rem 1rem 1rem 1rem;
-    cursor: pointer;    
-       
-}
-
-.font{
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    top: 2px;      
-}
-
   
 /**restaurant**/
 
