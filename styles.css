@@ -331,26 +331,6 @@ h2 {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  /*
-  .fa-mobile-alt:hover{
-      color: $violet-primaire;
-  }
-  .fa-list-ol{
-      color: $violet-primaire;
-  }
-  .fa-store{
-      color: $violet-primaire;
-  }
-  */
-  /*
-  .bouton2-icon::after{
-      content:"";
-      background-color:$ghost-white;
-      align-items: center;
-      &:hover{
-          background-color:$ghost-white;
-      }
-      */
 }
 @media screen and (max-width: 768px) {
   .bouton2 {
@@ -402,25 +382,16 @@ h2 {
 .bouton2 .case1:hover {
   background-color: #F7F0FF;
   cursor: pointer;
-}
-.bouton2 .case1:hover .fa-mobile-alt::after {
-  content: "";
   color: #9356DC;
 }
 .bouton2 .case2:hover {
   background-color: #F7F0FF;
   cursor: pointer;
-}
-.bouton2 .case2:hover .fa-list-ol::after {
-  content: "";
   color: #9356DC;
 }
 .bouton2 .case3:hover {
   background-color: #F7F0FF;
   cursor: pointer;
-}
-.bouton2 .case3:hover .fa-store::after {
-  content: "";
   color: #9356DC;
 }
 
@@ -628,7 +599,6 @@ h2 {
   max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
-  animation: itemAppear 1s ease-in-out both;
 }
 .sous-menu .sous-menu-title {
   text-transform: uppercase;
@@ -659,31 +629,31 @@ h2 {
   animation: itemAppear 3s ease-in-out both;
 }
 .container-menu:nth-child(1) {
-  animation-delay: 200ms;
+  animation-delay: 150ms;
 }
 .container-menu:nth-child(2) {
-  animation-delay: 400ms;
+  animation-delay: 300ms;
 }
 .container-menu:nth-child(3) {
-  animation-delay: 600ms;
+  animation-delay: 450ms;
 }
 .container-menu:nth-child(4) {
-  animation-delay: 800ms;
+  animation-delay: 600ms;
 }
 .container-menu:nth-child(5) {
-  animation-delay: 1000ms;
+  animation-delay: 750ms;
 }
 .container-menu:nth-child(6) {
-  animation-delay: 1200ms;
+  animation-delay: 900ms;
 }
 .container-menu:nth-child(7) {
-  animation-delay: 1400ms;
+  animation-delay: 1050ms;
 }
 .container-menu:nth-child(8) {
-  animation-delay: 1600ms;
+  animation-delay: 1200ms;
 }
 .container-menu:nth-child(9) {
-  animation-delay: 1800ms;
+  animation-delay: 1350ms;
 }
 .container-menu .container-menu_containerT {
   flex: 1;

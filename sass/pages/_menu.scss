@@ -60,7 +60,7 @@
    max-width: 100%;
   overflow: hidden;
   padding: 0 1rem;
-  animation: itemAppear 1s ease-in-out both ;
+ 
   
 
    .sous-menu-title{
@@ -97,7 +97,7 @@
     animation: itemAppear 3s ease-in-out both ;
      @for $i from 1 through 9 {
         &:nth-child(#{$i}) {
-            animation-delay:200ms * $i;
+            animation-delay:150ms * $i;
         }
      }
     

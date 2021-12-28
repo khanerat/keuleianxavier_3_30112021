@@ -170,48 +170,25 @@ h2{
       align-items: center;
       top: 2px;      
     }
-    /*
-    .fa-mobile-alt:hover{
-        color: $violet-primaire;
-    }
-    .fa-list-ol{
-        color: $violet-primaire;
-    }
-    .fa-store{
-        color: $violet-primaire;
-    }
-    */
-    /*
-    .bouton2-icon::after{
-        content:"";
-        background-color:$ghost-white;
-        align-items: center;
-        &:hover{
-            background-color:$ghost-white;
-        }
-        */
     
     .case1:hover{
         background-color: $ghost-white;
         cursor:pointer;
-        .fa-mobile-alt::after{
-            content:"";
+        @if fa-mobile-alt{
             color:$violet-primaire;
         }
     }
     .case2:hover{
         background-color: $ghost-white;
         cursor:pointer;
-        .fa-list-ol::after{
-            content:"";
+        @if fa-list-ol{
             color:$violet-primaire;
         }      
     }
     .case3:hover{
         background-color: $ghost-white;
         cursor:pointer;
-        .fa-store::after{
-            content:"";
+        @if fa-store{
             color:$violet-primaire;
         }
     }
