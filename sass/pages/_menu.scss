@@ -94,7 +94,7 @@
     box-shadow:0.25rem 0.25rem 0.25rem rgb(0 0 0 / 10%);
     overflow:hidden;
     cursor:pointer;
-    animation: itemAppear 3s ease-in-out both ;
+    animation: itemAppear 1s ease-in-out both ;
      @for $i from 1 through 9 {
         &:nth-child(#{$i}) {
             animation-delay:150ms * $i;

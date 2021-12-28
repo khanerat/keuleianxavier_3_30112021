@@ -626,7 +626,7 @@ h2 {
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 3s ease-in-out both;
+  animation: itemAppear 1s ease-in-out both;
 }
 .container-menu:nth-child(1) {
   animation-delay: 150ms;
