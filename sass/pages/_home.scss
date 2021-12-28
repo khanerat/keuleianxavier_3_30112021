@@ -153,6 +153,7 @@ h2{
         position: relative;
         &:hover{
             background-color:$ghost-white;
+            cursor:pointer;
             i{ color:$violet-primaire;}
         }
     }

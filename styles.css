@@ -360,6 +360,7 @@ h2 {
 }
 .bouton2 .bouton2-logoF:hover {
   background-color: #F7F0FF;
+  cursor: pointer;
 }
 .bouton2 .bouton2-logoF:hover i {
   color: #9356DC;
