@@ -92,10 +92,8 @@
 
 /**general**/
 .logo,
-h1,
-h2,
-h3 {
-  font-family: "shrikhand", sans-serif;
+h1 {
+  font-family: "Shrikhand", sans-serif;
 }
 
 body,
@@ -360,6 +358,12 @@ h2 {
   background-color: #F6F6F6;
   position: relative;
 }
+.bouton2 .bouton2-logoF:hover {
+  background-color: #F7F0FF;
+}
+.bouton2 .bouton2-logoF:hover i {
+  color: #9356DC;
+}
 .bouton2 li {
   text-decoration: none;
 }
@@ -378,21 +382,6 @@ h2 {
   height: 20px;
   align-items: center;
   top: 2px;
-}
-.bouton2 .case1:hover {
-  background-color: #F7F0FF;
-  cursor: pointer;
-  color: #9356DC;
-}
-.bouton2 .case2:hover {
-  background-color: #F7F0FF;
-  cursor: pointer;
-  color: #9356DC;
-}
-.bouton2 .case3:hover {
-  background-color: #F7F0FF;
-  cursor: pointer;
-  color: #9356DC;
 }
 
 /**restaurant**/
@@ -545,11 +534,6 @@ h2 {
 #block {
   padding: 1rem 2rem 0 1rem;
   justify-content: space-between;
-}
-
-/**restaurant**/
-.titreP {
-  font-family: "Shrikhand,cursive";
 }
 
 /**coeur**/

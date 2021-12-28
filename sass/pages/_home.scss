@@ -151,6 +151,10 @@ h2{
         border-radius: 1.25rem;
         background-color:$fond-whiteSmoke;
         position: relative;
+        &:hover{
+            background-color:$ghost-white;
+            i{ color:$violet-primaire;}
+        }
     }
 
     li {
@@ -171,27 +175,7 @@ h2{
       top: 2px;      
     }
     
-    .case1:hover{
-        background-color: $ghost-white;
-        cursor:pointer;
-        @if fa-mobile-alt{
-            color:$violet-primaire;
-        }
-    }
-    .case2:hover{
-        background-color: $ghost-white;
-        cursor:pointer;
-        @if fa-list-ol{
-            color:$violet-primaire;
-        }      
-    }
-    .case3:hover{
-        background-color: $ghost-white;
-        cursor:pointer;
-        @if fa-store{
-            color:$violet-primaire;
-        }
-    }
+    
 }
   
 /**restaurant**/
