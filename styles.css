@@ -237,6 +237,10 @@ footer li:hover {
   margin-right: 15px;
 }
 
+.textSearch {
+  font-weight: bold;
+}
+
 /**presentation**/
 p {
   display: block;
@@ -510,6 +514,16 @@ h2 {
   opacity: 1;
 }
 
+h1 {
+  display: block;
+  font-size: 1.4em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .image {
   width: 100%;
   height: 500px;
@@ -681,7 +695,7 @@ h2 {
   border-radius: 100px;
   background-color: white;
   color: #99E2D0;
-  transform: rotate(100deg);
+  transform: rotate(160deg);
   transition-duration: 0.7s;
 }
 .container-menu:hover .container-menu_mouvement-icon {
