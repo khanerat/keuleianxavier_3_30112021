@@ -681,7 +681,7 @@ h2 {
   border-radius: 100px;
   background-color: white;
   color: #99E2D0;
-  transform: rotate(180deg);
+  transform: rotate(100deg);
   transition-duration: 0.7s;
 }
 .container-menu:hover .container-menu_mouvement-icon {
