@@ -155,12 +155,12 @@ h1{
      border-radius:100px;
      background-color:white;
      color:$vert-tertiaire;
-     transform:rotate(160deg);
-     transition-duration:0.7s;
+     transform:rotate(-360deg);
+     transition-duration:0.6s;
    }
 
    &:hover .container-menu_mouvement-icon{
-    transform:rotate(0);
+    transform:rotate(360deg);
    }
 
    .container-menu_icon{
